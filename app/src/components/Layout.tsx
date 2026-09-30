@@ -14,7 +14,7 @@ export function Layout() {
         <Outlet />
         <Footer />
       </div>
-      <p className="copyright" inert={sidebarOpen}>&copy; {new Date().getFullYear()} CS-sektionen. All Rights Reserved.</p>
+      <p className="copyright" inert={sidebarOpen}>&copy; {new Date().getFullYear()} CS-sektionen. <span>Alla rättigheter förbehållna.</span></p>
     </>
   );
 }

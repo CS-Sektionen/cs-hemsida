@@ -39,26 +39,23 @@ export function Footer() {
 
       <div className="footer-links" id="program-links">
         <h4>Programsidor</h4>
-        <a href="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/">
-          Civilingenjörsprogrammet i interaktion &amp; design
-        </a>
-        <p> </p>
-        <a href="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-teknisk-datavetenskap/">
-          Civilingenjörsprogrammet i teknisk datavetenskap
-        </a>
-        <p> </p>
-        <a href="https://www.umu.se/utbildning/program/kandidatprogrammet-i-datavetenskap/">
-          Kandidatprogrammet i datavetenskap
-        </a>
-        <p> </p>
-        <a href="https://www.umu.se/utbildning/program/masterprogrammet-i-datavetenskap/">
-          Masterprogrammet i datavetenskap
-        </a>
-        <p> </p>
-        <a href="https://www.umu.se/utbildning/program/masterprogrammet-i-artificiell-intelligens/">
-          Masterprogrammet i artificiell intelligens
-        </a>
-        <p> </p>
+        <ul>
+          <li>
+            <a href="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/">Civilingenjörsprogrammet i interaktion &amp; design</a>
+          </li>
+          <li>
+            <a href="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-teknisk-datavetenskap/">Civilingenjörsprogrammet i teknisk datavetenskap</a>
+          </li>
+          <li>
+            <a href="https://www.umu.se/utbildning/program/kandidatprogrammet-i-datavetenskap/">Kandidatprogrammet i datavetenskap</a>
+          </li>
+          <li>
+            <a href="https://www.umu.se/utbildning/program/masterprogrammet-i-datavetenskap/">Masterprogrammet i datavetenskap</a>
+          </li>
+          <li>
+            <a href="https://www.umu.se/utbildning/program/masterprogrammet-i-artificiell-intelligens/">Masterprogrammet i artificiell intelligens</a>
+          </li>
+        </ul>
       </div>
     </footer>
   );

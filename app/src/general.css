@@ -121,7 +121,7 @@ a {
 	width: 95%;
 	margin: 0 auto;
 	margin-top: 92px;
-	margin-bottom: 50px;
+	margin-bottom: 0;
 	border: 2px solid var(--border-blue);
 	border-radius: 10px;
 	background: var(--dark-blue);
@@ -146,6 +146,10 @@ main {
 	opacity: 0.6;
 	padding: 1rem 0;
 	margin: 0;
+}
+
+.copyright span {
+	display: inline-block;
 }
 
 
@@ -630,6 +634,16 @@ footer {
 
 #program-links {
 	grid-column: 3;
+}
+
+#program-links ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	list-style: none;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
 }
 
 .middle {
