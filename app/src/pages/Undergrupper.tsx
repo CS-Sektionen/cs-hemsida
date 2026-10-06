@@ -20,7 +20,7 @@ const projektledare = [
     description: 'Hej hej! Jag heter Emma och går tredje året på ID. Utöver DiCS så sjunger och dansar jag i Medicinarspexet, Sparketten och Nationskören. Eftersom undergruppen precis dragit igång så är min uppgift just nu att definiera vad undergruppen ska göra och hur den ska fungera. Jag är även ansvarig för att hålla kontakt med styrelsen, ordna DiCS aktiviteter, och utveckling av hemsidan såklart. Om du har idéer på vad DiCS ska göra och vill engagera dig i undergruppen så är det bara att höra av dig till mig!',
   },
   {
-    image: '/Images/styrelse-bilder/placeholder.jpg',
+    image: '/Images/emie.jpg',
     imageAlt: 'Ansvarig för MaCS',
     name: 'Emelie Lindahl',
     email: 'emielindahl@gmail.com',
