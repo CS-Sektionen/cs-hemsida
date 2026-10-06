@@ -99,8 +99,6 @@ const categories: Category[] = [
         role: 'Sekreterare',
         description: (
           <>
-            <br />
-            <br />
             Min uppgift är att aktivt delta i de styrelsemöten, evenemang och övriga
             sammankomster och föra protokoll över vad som sägs, bestäms och tas upp. Protokollet ska sedan signeras och publiceras på CS-sektionens hemsida
             , så att alla medlemmar kan ta del av det som har diskuterats och beslutats.
@@ -135,8 +133,6 @@ const categories: Category[] = [
         role: 'Kommunikations­utskottet',
         description: (
           <>
-            <br />
-            <br />
             Jag ansvarar för att information når ut till medlemmarna, och gör PR åt sektionen och kåren. 
             I detta ingår att hålla våra informationskanaler aktiva och attraktiva så att medlemmar
             får den informationen vi vill förmedla samt att vi ska locka nya medlemmar.
@@ -169,8 +165,6 @@ const categories: Category[] = [
         role: 'Utbildnings­bevaknings­utskottet',
         description: (
           <>
-            <br />
-            <br />
             Som representant för CS-sektionen inom utbildningsbevakningsenheten så hjälper jag
             studenter med problem rörande utbildning och/eller studiesituation samt
             informerar om deras rättigheter. Jag arbetar för att uppmärksamma och driva de frågor som är relevanta för studenterna inom din
