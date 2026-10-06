@@ -31,7 +31,7 @@ const categories: Category[] = [
     title: 'Presidiet',
     members: [
       {
-        image: '/Images/styrelse-bilder/ordforande.jpg',
+        image: '/Images/Styrelsen26-27/ture.jpg',
         imageAlt: 'ordförande',
         name: 'Ture Åström Säfsten',
         email: 'ordf@cssektionen.se',
@@ -52,7 +52,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/cedric.jpg',
         imageAlt: 'kassör',
         name: 'Cedric Strand',
         email: 'ekonomi@cssektionen.se',
@@ -75,7 +75,7 @@ const categories: Category[] = [
     title: 'Presidiestöd',
     members: [
       {
-        image: '/Images/styrelse-bilder/vice.jpg',
+        image: '/Images/Styrelsen26-27/lukasW.jpg',
         imageAlt: 'vice ordförande',
         name: 'Lukas Walther',
         email: 'vice@cssektionen.se',
@@ -92,7 +92,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/kevin.jpg',
         imageAlt: 'sekreterare',
         name: 'Kevin Molin',
         email: 'sekreterare@cssektionen.se',
@@ -128,7 +128,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder/manar.jpg',
+        image: '/Images/Styrelsen26-27/manar.jpg',
         imageAlt: 'Kommunikationsutskottet',
         name: 'Manar Al-Latifi',
         email: 'kommunikation@cssektionen.se',
@@ -144,7 +144,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder/elias.jpg',
+        image: '/Images/Styrelsen26-27/elias.jpg',
         imageAlt: 'studiesociala utskottet',
         name: 'Elias Svensson',
         email: 'studiesocial@cssektionen.se',
@@ -162,7 +162,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/ellinor.jpg',
         imageAlt: 'Utbildningsbevakningsutskottet',
         name: 'Ellinor Rosenberg',
         email: 'utbildning@cssektionen.se',
@@ -186,7 +186,7 @@ const categories: Category[] = [
     description: egoDescription,
     members: [
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/hannes.jpg',
         imageAlt: 'C-ego',
         name: 'Hannes Svonni',
         email: 'cego@cssektionen.se',
@@ -194,7 +194,7 @@ const categories: Category[] = [
         description: '',
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/styrelse-bilder/placeholder.jpg',
         imageAlt: 'DV-ego',
         name: 'Hannes Nilsson',
         email: 'dvego@cssektionen.se',
@@ -202,7 +202,7 @@ const categories: Category[] = [
         description: '',
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/lukas.jpg',
         imageAlt: 'ID-ego',
         name: 'Lukas Melin',
         email: 'idego@cssektionen.se',
