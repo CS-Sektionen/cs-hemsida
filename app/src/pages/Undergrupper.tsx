@@ -3,21 +3,94 @@ import styles from './Undergrupper.module.css';
 import { MemberCard } from '../components/MemberCard';
 import { Reveal } from '../components/Reveal';
 
+const undergrupper = [
+  {
+    image: '/Images/LANbyCS.png',
+    imageAlt: 'Bild på LANbyCS logga',
+    title: 'LANbyCS',
+    description: (
+      <>
+        LANbyCS är en projektgrupp som håller LAN-partyn för CS-sektionen och övriga studenter.
+        Vi är en grupp som brinner för gaming och vill skapa en rolig och social upplevelse för alla deltagare.
+        Vi anordnar LAN varje vår- och hösttermin, och ibland samarbetar vi med andra campus runtom i Sverige för att skapa Cross-Country LAN.
+        Vår vision är att skapa en gemenskap kring gaming och ge studenterna möjlighet att träffas, spela tillsammans och ha kul!
+      </>
+    ),
+  },
+  {
+    image: '/Images/join-computer-science.jpg',
+    imageAlt: 'Bild på DiCS logga',
+    title: 'DiCS (Dataintresserade i CS)',
+    description: (
+      <>
+        Äntligen så har undergruppen DiCS dragit igång! DiCS är en undergrupp som vill främja intresset för data och programmering bland medlemmarna i sektionen.
+        Undergruppen kommer att anordna olika aktiviteter och evenemang som är relaterade till data och programmering, såsom workshops, föreläsningar och hackathons.
+        DiCS vill skapa en gemenskap kring data och programmering och ge medlemmarna möjlighet att lära sig mer om ämnet. Har du kanske ett hobbyprojekt som du vill
+        genomföra tillsammans med andra och vill ha hjälp med resurser? Då är DiCS undergruppen för dig!
+      </>
+    ),
+  },
+  {
+    image: '/Images/MaCS-logga.png',
+    imageAlt: 'Bild på märkesgruppens logga',
+    title: 'MaCS (Märken av CS)',
+    description: (
+      <>
+        MaCS är en undergrupp som ansvarar för att designa och märken till CS-sektionen.
+        Har du en idé på ett märke som du vill att sektionen ska ha? Då är det MaCS du ska kontakta!
+        De ser till att sektionen har riktigt snygga märken att sälja på märkestisdagen.
+      </>
+    ),
+  },
+  {
+    image: '/Images/GiB.png',
+    imageAlt: 'Bild på GIBs logga',
+    title: 'Gäris & Ickebinäris (GIB)',
+    description: (
+      <>
+        Gäris &amp; Ickebinäris (GIB) är en undergrupp som arbetar för att främja jämställdhet och inkludering inom CS-sektionen.
+        De riktar sig främst till kvinnor och ickebinära personer, men alla är välkomna på deras aktiviteter.
+      </>
+    ),
+  },
+];
+
 const projektledare = [
   {
     image: '/Images/styrelse-bilder/vice.jpg',
     imageAlt: 'LANbyCS projektledare',
     name: 'Lukas Walther',
     role: 'LANbyCS',
-    description: 'Jag heter Lukas! Datavetare på mitt tredje år, och jag är även vice ordförande för sektionen. Som projektledare är min uppgift att anordna minst ett LAN per år, efter möjlighet, samt sammarbeta med Styrelsen för att främja studentlivet på sektionen. Rollen innebär mycket kommunikation mellan Styrelsen, projektgruppen, NTK samt eventuella andra organisationer kopplade till eventet, som exempelvis sponsorer.',
+    description: (
+      <>
+        Jag heter Lukas! Datavetare på mitt tredje år, och jag är även vice ordförande för sektionen.
+        <br />
+        <br />
+        Som projektledare är min uppgift att anordna minst ett LAN per år, efter möjlighet, samt sammarbeta med
+        Styrelsen för att främja studentlivet på sektionen. Rollen innebär mycket kommunikation mellan Styrelsen,
+        projektgruppen, NTK samt eventuella andra organisationer kopplade till eventet, som exempelvis sponsorer.
+      </>
+    ),
   },
   {
-    image: '/Images/emma-dics.jpg',
+    image: '/Images/alvar-dics.jpg',
     imageAlt: 'Projektledare för DiCS',
-    name: 'Emma Edlund',
+    name: 'Alvar Sjögren',
     email: 'dics@cssektionen.se',
     role: 'DiCS',
-    description: 'Hej hej! Jag heter Emma och går tredje året på ID. Utöver DiCS så sjunger och dansar jag i Medicinarspexet, Sparketten och Nationskören. Eftersom undergruppen precis dragit igång så är min uppgift just nu att definiera vad undergruppen ska göra och hur den ska fungera. Jag är även ansvarig för att hålla kontakt med styrelsen, ordna DiCS aktiviteter, och utveckling av hemsidan såklart. Om du har idéer på vad DiCS ska göra och vill engagera dig i undergruppen så är det bara att höra av dig till mig!',
+    description: (
+      <>
+        Hej! Jag heter Alvar och går tredje året på ID. Jag har nyss tagit över rollen som projektledare för DiCS,
+        så just nu försöker jag skaffa mig en lägesbild om hur vi ska jobba och vilka som är intresserade av att vara med.
+        Som projektledare är min uppgift att hålla kontakt med styrelsen och ordna DiCS-aktiviteter.
+        <br />
+        <br />
+        Jag håller också ett öga på hemsidan. På fritiden labbar jag gärna med min hemmaserver eller 3D-printar något
+        helt onödigt. Jag har också en svag punkt för torra ordvitsar. Har du någon idé om vad DiCS ska hålla på med,
+        vill du engagera dig i undergruppen, eller har du bara en riktigt torr ordvits? Hör av dig, jag finns både på
+        mail och i CS-discorden!
+      </>
+    ),
   },
   {
     image: '/Images/emie.jpg',
@@ -25,15 +98,25 @@ const projektledare = [
     name: 'Emelie Lindahl',
     email: 'emielindahl@gmail.com',
     role: 'MaCS',
-    description: 'Har du en idé på ett märke som du vill att sektionen ska ha? Då är det mig du ska kontakta! Jag är ansvarig för märkesgruppen och ser till att sektionen har riktigt snygga märken att sälja på märkestisdagen.',
+    description: (
+      <>
+        Har du en idé på ett märke som du vill att sektionen ska ha? Då är det mig du ska kontakta! Jag är ansvarig
+        för märkesgruppen och ser till att sektionen har riktigt snygga märken att sälja på märkestisdagen.
+      </>
+    ),
   },
-    {
+  {
     image: '/Images/styrelse-bilder/placeholder.jpg',
     imageAlt: 'GIB ordförande',
     name: 'Vakant',
     email: 'gibdata2@gmail.com',
     role: 'GIB',
-    description: 'Ansvarig för Gäris & Ickebinäris (GIB) är vakant. Om du vill engagera dig i undergruppen eller har frågor om deras verksamhet, kontakta styrelsen för vidare hänvisning.',
+    description: (
+      <>
+        Ansvarig för Gäris & Ickebinäris (GIB) är vakant. Om du vill engagera dig i undergruppen eller har frågor om
+        deras verksamhet, kontakta styrelsen för vidare hänvisning.
+      </>
+    ),
   },
 ];
 
@@ -60,59 +143,16 @@ export function Undergrupper() {
 
       <main id="main">
         <div className={styles['befintliga-undergrupper']}>
-          <Reveal className={styles.undergrupp}>
-            <img src="/Images/LANbyCS.png" alt="Bild på LANbyCS logga" />
-            <div className={styles['undergrupp-text']}>
-              <h2>LANbyCS</h2>
-              <p>
-                LANbyCS är en projektgrupp som håller LAN-partyn för CS-sektionen och övriga studenter. 
-                Vi är en grupp som brinner för gaming och vill skapa en rolig och social upplevelse för alla deltagare. 
-                Vi anordnar LAN varje vår- och hösttermin, och ibland samarbetar vi med andra campus runtom i Sverige för att skapa Cross-Country LAN. 
-                Vår vision är att skapa en gemenskap kring gaming och ge studenterna möjlighet att träffas, spela tillsammans och ha kul!
-              </p>
-            </div>
-          </Reveal>
-
-             <Reveal className={styles.undergrupp}>
-            <img src="/Images/join-computer-science.jpg" alt="Bild på DiCS logga" />
-            <div className={styles['undergrupp-text']}>
-              <h2>DiCS (Data i CS)</h2>
-              <p>
-                Äntligen så har undergruppen DiCS dragit igång! DiCS är en undergrupp som vill främja intresset för data och programmering bland medlemmarna i sektionen.
-                Undergruppen kommer att anordna olika aktiviteter och evenemang som är relaterade till data och programmering, såsom workshops, föreläsningar och hackathons. 
-                DiCS vill skapa en gemenskap kring data och programmering och ge medlemmarna möjlighet att lära sig mer om ämnet. Har du kanske ett hobbyprojekt som du vill 
-                genomföra tillsammans med andra och vill ha hjälp med resurser? Då är DiCS undergruppen för dig!
-              </p>
-            </div>
-          </Reveal>
-
-          <Reveal className={styles.undergrupp}>
-            <img src="/Images/MaCS-logga.png" alt="Bild på märkesgruppens logga" />
-            <div className={styles['undergrupp-text']}>
-              <h2>MaCS (Märken av CS)</h2>
-              <p>
-                MaCS är en undergrupp som ansvarar för att designa och märken till CS-sektionen. 
-                Har du en idé på ett märke som du vill att sektionen ska ha? Då är det MaCS du ska kontakta! 
-                De ser till att sektionen har riktigt snygga märken att sälja på märkestisdagen.
-              </p>
-            </div>
-          </Reveal>
-
-       
-
-           <Reveal className={styles.undergrupp}>
-            <img src="/Images/GiB.png" alt="Bild på GIBs logga" />
-            <div className={styles['undergrupp-text']}>
-              <h2>Gäris &amp; Ickebinäris (GIB)</h2>
-              <p>
-                Gäris &amp; Ickebinäris (GIB) är en undergrupp som arbetar för att främja jämställdhet och inkludering inom CS-sektionen.
-                De riktar sig främst till kvinnor och ickebinära personer, men alla är välkomna på deras aktiviteter. 
-              </p>
-            </div>
-          </Reveal>
+          {undergrupper.map((grupp) => (
+            <Reveal key={grupp.title} className={styles.undergrupp}>
+              <img src={grupp.image} alt={grupp.imageAlt} />
+              <div className={styles['undergrupp-text']}>
+                <h2>{grupp.title}</h2>
+                <p>{grupp.description}</p>
+              </div>
+            </Reveal>
+          ))}
         </div>
-
-        
 
         <Reveal className={styles['projektledare-cards']}>
           <h2>Projektledare</h2>

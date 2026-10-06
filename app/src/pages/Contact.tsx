@@ -76,7 +76,7 @@ const categories = [
         email: 'lanbycs@gmail.com',
       },
       {
-        name: 'Emma Edlund',
+        name: 'Alvar Sjögren',
         email: 'dics@cssektionen.se',
         role: 'DiCS projektledare',
       },
