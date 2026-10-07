@@ -8,11 +8,29 @@ interface MemberCardProps {
   name: string;
   email?: string;
   role: string;
-  description: ReactNode;
+  description?: ReactNode;
+  compact?: boolean;
 }
 
-export function MemberCard({ image, imageAlt, name, email, role, description }: MemberCardProps) {
+export function MemberCard({ image, imageAlt, name, email, role, description, compact }: MemberCardProps) {
   const [expanded, setExpanded] = useState(false);
+
+  if (compact) {
+    return (
+      <div className={`program-card ${styles['program-card']} ${styles.compact}`}>
+        <div className={styles['image-caption']}>
+          <h4 className={`${styles['board-h4']} ${styles['compact-role']}`}>{role}</h4>
+          <img src={image} alt={imageAlt} />
+          <h3 className={styles['board-h3']}>{name}</h3>
+          {email && (
+            <a className={styles['board-mail']} href={`mailto:${email}`}>
+              {email}
+            </a>
+          )}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={`program-card ${styles['program-card']}`}>

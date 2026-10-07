@@ -6,13 +6,14 @@ import { Reveal } from '../components/Reveal';
 interface Category {
   title: string;
   description?: ReactNode;
+  compact?: boolean;
   members: {
     image: string;
     imageAlt: string;
     name: string;
     email: string;
     role: string;
-    description: ReactNode;
+    description?: ReactNode;
   }[];
 }
 
@@ -178,6 +179,7 @@ const categories: Category[] = [
   {
     title: 'Egon',
     description: egoDescription,
+    compact: true,
     members: [
       {
         image: '/images/board/2026-27/hannes.jpg',
@@ -185,7 +187,6 @@ const categories: Category[] = [
         name: 'Hannes Svonni',
         email: 'cego@cssektionen.se',
         role: 'C-ego',
-        description: '',
       },
       {
         image: '/images/placeholder.jpg',
@@ -193,7 +194,6 @@ const categories: Category[] = [
         name: 'Hannes Nilsson',
         email: 'dvego@cssektionen.se',
         role: 'DV-ego',
-        description: '',
       },
       {
         image: '/images/board/2026-27/lukas.jpg',
@@ -201,7 +201,6 @@ const categories: Category[] = [
         name: 'Lukas Melin',
         email: 'idego@cssektionen.se',
         role: 'ID-ego',
-        description: '',
       },
     ],
   }
@@ -237,9 +236,17 @@ export function Board() {
                 {category.description && <p>{category.description}</p>}
               </div>
 
-              {category.members.map((member) => (
-                <MemberCard key={member.name + member.role} {...member} />
-              ))}
+              {category.compact ? (
+                <div className={styles['compact-row']}>
+                  {category.members.map((member) => (
+                    <MemberCard key={member.name + member.role} {...member} compact />
+                  ))}
+                </div>
+              ) : (
+                category.members.map((member) => (
+                  <MemberCard key={member.name + member.role} {...member} />
+                ))
+              )}
             </Reveal>
           ))}
         </div>

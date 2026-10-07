@@ -71,6 +71,22 @@
 	visibility: hidden;
 }
 
+.program-card.compact {
+	display: flex;
+	justify-content: center;
+	padding: 2.5rem 1rem;
+}
+
+.image-caption > .compact-role {
+	margin: 0 0 1.5rem;
+	text-align: center;
+}
+
+.compact .image-caption > img {
+	width: 12rem;
+	height: 12rem;
+}
+
 @media only screen and (max-width: 900px) {
 	.program-card {
 		display: flex;

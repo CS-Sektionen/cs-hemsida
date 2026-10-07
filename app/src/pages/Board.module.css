@@ -54,3 +54,9 @@
 	align-items: start;
 	row-gap: 0;
 }
+
+.compact-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 30px;
+}
