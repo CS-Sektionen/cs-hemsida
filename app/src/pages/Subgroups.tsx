@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import styles from './Undergrupper.module.css';
+import styles from './Subgroups.module.css';
 import { MemberCard } from '../components/MemberCard';
 import { Reveal } from '../components/Reveal';
 
-const undergrupper = [
+const subgroups = [
   {
-    image: '/Images/LANbyCS.png',
+    image: '/images/lan-by-cs-logo.png',
     imageAlt: 'Bild på LANbyCS logga',
     title: 'LANbyCS',
     description: (
@@ -18,7 +18,7 @@ const undergrupper = [
     ),
   },
   {
-    image: '/Images/join-computer-science.jpg',
+    image: '/images/join-computer-science.jpg',
     imageAlt: 'Bild på DiCS logga',
     title: 'DiCS (Dataintresserade i CS)',
     description: (
@@ -31,7 +31,7 @@ const undergrupper = [
     ),
   },
   {
-    image: '/Images/MaCS-logga.png',
+    image: '/images/macs-logo.png',
     imageAlt: 'Bild på märkesgruppens logga',
     title: 'MaCS (Märken av CS)',
     description: (
@@ -43,7 +43,7 @@ const undergrupper = [
     ),
   },
   {
-    image: '/Images/GiB.png',
+    image: '/images/gib-logo.png',
     imageAlt: 'Bild på GIBs logga',
     title: 'Gäris & Ickebinäris (GIB)',
     description: (
@@ -55,9 +55,9 @@ const undergrupper = [
   },
 ];
 
-const projektledare = [
+const projectLeads = [
   {
-    image: '/Images/styrelse-bilder/vice.jpg',
+    image: '/images/board/undated/vice-chair.jpg',
     imageAlt: 'LANbyCS projektledare',
     name: 'Lukas Walther',
     role: 'LANbyCS',
@@ -73,7 +73,7 @@ const projektledare = [
     ),
   },
   {
-    image: '/Images/alvar-dics.jpg',
+    image: '/images/alvar-dics.jpg',
     imageAlt: 'Projektledare för DiCS',
     name: 'Alvar Sjögren',
     email: 'dics@cssektionen.se',
@@ -93,7 +93,7 @@ const projektledare = [
     ),
   },
   {
-    image: '/Images/emie.jpg',
+    image: '/images/emie.jpg',
     imageAlt: 'Ansvarig för MaCS',
     name: 'Emelie Lindahl',
     email: 'emielindahl@gmail.com',
@@ -106,7 +106,7 @@ const projektledare = [
     ),
   },
   {
-    image: '/Images/styrelse-bilder/placeholder.jpg',
+    image: '/images/placeholder.jpg',
     imageAlt: 'GIB ordförande',
     name: 'Vakant',
     email: 'gibdata2@gmail.com',
@@ -120,7 +120,7 @@ const projektledare = [
   },
 ];
 
-export function Undergrupper() {
+export function Subgroups() {
   return (
     <>
       <div className={`heading-frame ${styles['heading-frame']}`}>
@@ -142,28 +142,28 @@ export function Undergrupper() {
       </div>
 
       <main id="main">
-        <div className={styles['befintliga-undergrupper']}>
-          {undergrupper.map((grupp) => (
-            <Reveal key={grupp.title} className={styles.undergrupp}>
-              <img src={grupp.image} alt={grupp.imageAlt} />
-              <div className={styles['undergrupp-text']}>
-                <h2>{grupp.title}</h2>
-                <p>{grupp.description}</p>
+        <div className={styles['existing-subgroups']}>
+          {subgroups.map((group) => (
+            <Reveal key={group.title} className={styles.subgroup}>
+              <img src={group.image} alt={group.imageAlt} />
+              <div className={styles['subgroup-text']}>
+                <h2>{group.title}</h2>
+                <p>{group.description}</p>
               </div>
             </Reveal>
           ))}
         </div>
 
-        <Reveal className={styles['projektledare-cards']}>
+        <Reveal className={styles['project-lead-cards']}>
           <h2>Projektledare</h2>
-          {projektledare.map((member) => (
+          {projectLeads.map((member) => (
             <MemberCard key={member.name} {...member} />
           ))}
         </Reveal>
 
         <Reveal className={`program-card ${styles['program-card']}`}>
-          <div className={styles['skapa-undergrupp']}>
-            <div className="skapa-undergrupp-text">
+          <div className={styles['create-subgroup']}>
+            <div className="create-subgroup-text">
               <h3>Vill du starta en undergrupp?</h3>
               <p>
                 Vad roligt! Om du har en idé på en undergrupp som du tycker borde finnas så vill vi höra om den.

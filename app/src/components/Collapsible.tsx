@@ -23,7 +23,7 @@ export function Collapsible({ title, children, image }: CollapsibleProps) {
             aria-expanded={open}
             onClick={() => setOpen((o) => !o)}
           >
-            <img src="/Images/line-angle-down-icon.svg" alt="" />
+            <img src="/images/chevron-down.svg" alt="" />
             {title}
           </button>
         </h2>

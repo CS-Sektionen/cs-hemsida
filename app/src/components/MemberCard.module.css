@@ -1,4 +1,4 @@
-.styrelse-h4 {
+.board-h4 {
 	color: var(--lt-blue);
 	font-size: 2em;
 	margin: 0;
@@ -6,7 +6,7 @@
 	overflow-wrap: break-word;
 }
 
-.styrelse-h3 {
+.board-h3 {
 	color: var(--white);
 	font-size: 1.75em;
 	text-align: center;
@@ -21,7 +21,7 @@
 	margin-bottom: 10px;
 }
 
-.styrelse-mail {
+.board-mail {
 	font-size: 0.85em;
 	font-weight: 100;
 	font-family: 'Tilt Warp';
@@ -32,7 +32,7 @@
 	white-space: nowrap;
 }
 
-.styrelse-mail:hover {
+.board-mail:hover {
 	color: var(--link-blue);
 }
 
@@ -45,20 +45,20 @@
 	min-width: 0;
 }
 
-.bild-rubrik {
+.image-caption {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.bild-rubrik > h4 {
+.image-caption > h4 {
 	justify-self: center;
 	line-height: 1;
 	margin-bottom: 0;
 	margin-top: 1rem;
 }
 
-.bild-rubrik > img {
+.image-caption > img {
 	width: 15rem;
 	height: 15rem;
 	border-radius: 50%;

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import styles from './Styrelsen.module.css';
+import styles from './Board.module.css';
 import { MemberCard } from '../components/MemberCard';
 import { Reveal } from '../components/Reveal';
 
@@ -31,7 +31,7 @@ const categories: Category[] = [
     title: 'Presidiet',
     members: [
       {
-        image: '/Images/Styrelsen26-27/ture.jpg',
+        image: '/images/board/2026-27/ture.jpg',
         imageAlt: 'ordförande',
         name: 'Ture Åström Säfsten',
         email: 'ordf@cssektionen.se',
@@ -52,7 +52,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/Styrelsen26-27/cedric.jpg',
+        image: '/images/board/2026-27/cedric.jpg',
         imageAlt: 'kassör',
         name: 'Cedric Strand',
         email: 'ekonomi@cssektionen.se',
@@ -75,7 +75,7 @@ const categories: Category[] = [
     title: 'Presidiestöd',
     members: [
       {
-        image: '/Images/Styrelsen26-27/lukasW.jpg',
+        image: '/images/board/2026-27/lukas-w.jpg',
         imageAlt: 'vice ordförande',
         name: 'Lukas Walther',
         email: 'vice@cssektionen.se',
@@ -92,7 +92,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/Styrelsen26-27/kevin.jpg',
+        image: '/images/board/2026-27/kevin.jpg',
         imageAlt: 'sekreterare',
         name: 'Kevin Molin',
         email: 'sekreterare@cssektionen.se',
@@ -111,7 +111,7 @@ const categories: Category[] = [
     title: 'Utskott',
     members: [
       {
-        image: '/Images/styrelse-bilder/placeholder.jpg',
+        image: '/images/placeholder.jpg',
         imageAlt: 'arbetsmarknadsutskottet',
         name: 'Vakant',
         email: 'arbetsmarknad@cssektionen.se',
@@ -126,7 +126,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/Styrelsen26-27/manar.jpg',
+        image: '/images/board/2026-27/manar.jpg',
         imageAlt: 'Kommunikationsutskottet',
         name: 'Manar Al-Latifi',
         email: 'kommunikation@cssektionen.se',
@@ -140,7 +140,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/Styrelsen26-27/elias.jpg',
+        image: '/images/board/2026-27/elias.jpg',
         imageAlt: 'studiesociala utskottet',
         name: 'Elias Svensson',
         email: 'studiesocial@cssektionen.se',
@@ -158,7 +158,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/Styrelsen26-27/ellinor.jpg',
+        image: '/images/board/2026-27/ellinor.jpg',
         imageAlt: 'Utbildningsbevakningsutskottet',
         name: 'Ellinor Rosenberg',
         email: 'utbildning@cssektionen.se',
@@ -180,7 +180,7 @@ const categories: Category[] = [
     description: egoDescription,
     members: [
       {
-        image: '/Images/Styrelsen26-27/hannes.jpg',
+        image: '/images/board/2026-27/hannes.jpg',
         imageAlt: 'C-ego',
         name: 'Hannes Svonni',
         email: 'cego@cssektionen.se',
@@ -188,7 +188,7 @@ const categories: Category[] = [
         description: '',
       },
       {
-        image: '/Images/styrelse-bilder/placeholder.jpg',
+        image: '/images/placeholder.jpg',
         imageAlt: 'DV-ego',
         name: 'Hannes Nilsson',
         email: 'dvego@cssektionen.se',
@@ -196,7 +196,7 @@ const categories: Category[] = [
         description: '',
       },
       {
-        image: '/Images/Styrelsen26-27/lukas.jpg',
+        image: '/images/board/2026-27/lukas.jpg',
         imageAlt: 'ID-ego',
         name: 'Lukas Melin',
         email: 'idego@cssektionen.se',
@@ -207,7 +207,7 @@ const categories: Category[] = [
   }
 ];
 
-export function Styrelsen() {
+export function Board() {
   return (
     <>
       <div className={`heading-frame ${styles['heading-frame']}`}>
@@ -229,10 +229,10 @@ export function Styrelsen() {
       </div>
 
       <main id="main">
-        <div className={styles['styrelse-squares']}>
+        <div className={styles['board-squares']}>
           {categories.map((category) => (
-            <Reveal className={styles['styrelse-kategori']} key={category.title}>
-              <div className={styles['kategori-beskrivning']}>
+            <Reveal className={styles['board-category']} key={category.title}>
+              <div className={styles['category-description']}>
                 <h2>{category.title}</h2>
                 {category.description && <p>{category.description}</p>}
               </div>

@@ -7,7 +7,7 @@
 }
 
 .heading-frame {
-	background-image: linear-gradient(0deg, rgba(8, 3, 22, 0.80) 0%, rgba(8, 3, 22, 0.80) 100%), url(/Images/hero/traplank.webp);
+	background-image: linear-gradient(0deg, rgba(8, 3, 22, 0.80) 0%, rgba(8, 3, 22, 0.80) 100%), url(/images/hero/wood-panel.webp);
 }
 
 .page h2, .page h3, .page h4 {
@@ -142,7 +142,7 @@
 * Info om kontakt t styrelsen samt knapp
 */
 
-.contact-styrelse {
+.contact-board {
 	display: flex;
 	flex-direction: column;
 	width: 60%;
@@ -155,11 +155,11 @@
 * Kontaktinformation till ansvariga för undergrupper
 */
 
-.contact-undergrupp > p {
+.contact-subgroup > p {
 	width: 60%;
 }
 
-.styrelse-squares {
+.board-squares {
 	display: flex;
 	flex-direction: column;
 	row-gap: 60px;
@@ -167,21 +167,21 @@
 	margin-bottom: 10px;
 }
 
-.styrelse-kategori {
+.board-category {
 	display: flex;
 	flex-direction: column;
 	justify-items: center;
 	row-gap: 30px;
 }
 
-.kategori-beskrivning {
+.category-description {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 	row-gap: 0;
 }
 
-.kategori-beskrivning > p {
+.category-description > p {
 	width: 60%;
 }
 
@@ -202,9 +202,9 @@
 
 @media only screen and (max-width: 750px) {
 	.form-and-text > p,
-	.contact-styrelse,
-	.contact-undergrupp > p,
-	.kategori-beskrivning > p,
+	.contact-board,
+	.contact-subgroup > p,
+	.category-description > p,
 	.contact-container {
 		width: 100%;
 	}

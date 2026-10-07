@@ -1,7 +1,7 @@
 /*---------- RUBRIK ----------*/
 
 .heading-frame {
-	background-image: linear-gradient(0deg, rgba(8, 3, 22, 0.80) 0%, rgba(8, 3, 22, 0.80) 100%), url(/Images/hero/club-origo.webp);
+	background-image: linear-gradient(0deg, rgba(8, 3, 22, 0.80) 0%, rgba(8, 3, 22, 0.80) 100%), url(/images/hero/club-origo.webp);
 }
 
 .heading-card {
@@ -29,7 +29,7 @@
 	align-items: center;
 }
 
-.aktiviteter {
+.activities {
 	display: flex;
 	flex-direction: column;
 	gap: 10rem;
@@ -40,13 +40,13 @@
 * Inställningar för LAN-aktivitet
 */ 
 
-.aktivitet-lan {
+.activity-lan {
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px;
 }
 
-.aktivitet-lan > h2 {
+.activity-lan > h2 {
 	margin: 0rem 0rem 2rem 5rem;
 }
 

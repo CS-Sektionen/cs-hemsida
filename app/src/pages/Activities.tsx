@@ -1,10 +1,10 @@
-import styles from './Aktiviteter.module.css';
+import styles from './Activities.module.css';
 import { Reveal } from '../components/Reveal';
 
-export function Aktiviteter() {
+export function Activities() {
   return (
     <>
-      <div id="aktiviteter-frame" className={`heading-frame ${styles['heading-frame']}`}>
+      <div id="activities-frame" className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Aktiviteter</h1> 
           <div className={styles['heading-card-content']}>
@@ -23,7 +23,7 @@ export function Aktiviteter() {
       </div>
 
       <main id="main">
-        <div className={styles.aktiviteter}>
+        <div className={styles.activities}>
           <Reveal className={`info-card-container ${styles['info-card-container']}`}>
             <div className="info-text">
               <h2>Märkestisdagar</h2>
@@ -33,11 +33,11 @@ export function Aktiviteter() {
                 Och såklart så finns CS-sektionen där och säljer våra egna märken, så kom förbi och köp ett märke eller två!
               </p>
             </div>
-            <img src="/Images/markestisdag.jpg" alt="Märkesförsäljning på tisdagar" />
+            <img src="/images/badge-tuesday.jpg" alt="Märkesförsäljning på tisdagar" />
           </Reveal>
 
           <Reveal className={`info-card-container ${styles['info-card-container']}`}>
-            <img src="/Images/ovveinvigning.jpg" alt="Studenter som inviger sina ovvar" />
+            <img src="/images/overalls-inauguration.jpg" alt="Studenter som inviger sina ovvar" />
             <div className="info-text">
               <h2>Ovveinvigningen</h2>
               <p>
@@ -57,11 +57,11 @@ export function Aktiviteter() {
                 Se till att hålla koll på våra sociala medier och vår kalender för att inte missa när anmälan öppnar!
               </p>
             </div>
-            <img src="/Images/are-skiweek.jpg" alt="Åre skidbacke" />
+            <img src="/images/are-ski-week.jpg" alt="Åre skidbacke" />
           </Reveal>
 
           <Reveal className={`info-card-container ${styles['info-card-container']}`}>
-            <img src="/Images/ovve.jpg" alt="GIB ordnar fika och häng" />
+            <img src="/images/overalls.jpg" alt="GIB ordnar fika och häng" />
             <div className="info-text">
               <h2>Syjuntor med fika</h2>
               <p>
@@ -70,7 +70,7 @@ export function Aktiviteter() {
             </div>
           </Reveal>
 
-          <div className={styles['aktivitet-lan']}>
+          <div className={styles['activity-lan']}>
             <Reveal className={`info-card-container ${styles['info-card-container']}`}>
               <div className="info-text">
                 <h2>LAN-helger</h2>
@@ -79,11 +79,11 @@ export function Aktiviteter() {
                   Det finns olika turneringar och aktiviteter, samt bjuds det på stora mängder med snacks och dryck. 
                 </p>
               </div>
-              <img src="/Images/LANbild1.png" alt="Deltagare som LAN:ar" />
+              <img src="/images/lan-1.png" alt="Deltagare som LAN:ar" />
             </Reveal>
 
             <Reveal className={`info-card-container ${styles['info-card-container']}`}>
-              <img src="/Images/LANbild2.png" alt="Mario Kart-turnering under LAN-event" />
+              <img src="/images/lan-2.png" alt="Mario Kart-turnering under LAN-event" />
               <div className="info-text">
                 <p>
                   Du behöver inte vara en hardcore gamer för att delta på LAN-helgerna, utan alla är välkomna oavsett erfarenhet. 
@@ -102,7 +102,7 @@ export function Aktiviteter() {
                 Under PUB:arna kan du träffa andra studenter, ta en öl eller en läsk och bara ha kul.
               </p>
             </div>
-            <img src="/Images/pub.jpg" alt="PUB anordnad av undergrupp" />
+            <img src="/images/pub.jpg" alt="PUB anordnad av undergrupp" />
           </Reveal>
         </div>
       </main>

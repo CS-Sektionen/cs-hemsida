@@ -16,17 +16,17 @@ export function MemberCard({ image, imageAlt, name, email, role, description }: 
 
   return (
     <div className={`program-card ${styles['program-card']}`}>
-      <div className={styles['bild-rubrik']}>
+      <div className={styles['image-caption']}>
         <img src={image} alt={imageAlt} />
-        <h3 className={styles['styrelse-h3']}>{name}</h3>
+        <h3 className={styles['board-h3']}>{name}</h3>
         {email && (
-          <a className={styles['styrelse-mail']} href={`mailto:${email}`}>
+          <a className={styles['board-mail']} href={`mailto:${email}`}>
             {email}
           </a>
         )}
       </div>
       <div className={styles['square-text']}>
-        <h4 className={`${styles['styrelse-h4']} ${role.replace(/­/g, '').length > 20 ? styles['long-role'] : ''}`}>
+        <h4 className={`${styles['board-h4']} ${role.replace(/­/g, '').length > 20 ? styles['long-role'] : ''}`}>
           {role}
         </h4>
         <div className={`${styles['desc-wrapper']} ${expanded ? styles.expanded : ''}`}>

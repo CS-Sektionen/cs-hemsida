@@ -113,11 +113,11 @@ export function Contact() {
       </div>
 
       <main id="main">        
-        <div className={styles['contact-undergrupp']}>
-          <div className={styles['styrelse-squares']}>
+        <div className={styles['contact-subgroup']}>
+          <div className={styles['board-squares']}>
             {categories.map((category) => (
-              <Reveal className={styles['styrelse-kategori']} key={category.title} id={category.id}>
-                <div className={styles['kategori-beskrivning']}>
+              <Reveal className={styles['board-category']} key={category.title} id={category.id}>
+                <div className={styles['category-description']}>
                   <h2>{category.title}</h2>
                   <p>{category.description}</p>
                 </div>
