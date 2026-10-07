@@ -46,12 +46,12 @@
 	width: 100%;
 	height: 100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background-image: radial-gradient(rgba(120, 120, 120, 0.05), black 180%), url(/Images/windows-xp.jpg);
+	background-image: radial-gradient(rgba(120, 120, 120, 0.05), black 180%), url(/images/retro/windows-xp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-shadow: 0 0 5px #C8C8C8;
 	border-radius: 3px;
-	cursor: url('/Images/High-Res_XP_Icons/Cursor_arrow.png'), auto;
+	cursor: url('/images/retro/xp-icons/cursor-arrow.png'), auto;
 	
 }
 
@@ -77,7 +77,7 @@
 	flex-direction: column;
 	height: 80px;
 	width: 80px;
-	cursor: url('/Images/High-Res_XP_Icons/Cursor_hand.png'), auto;
+	cursor: url('/images/retro/xp-icons/cursor-hand.png'), auto;
 	margin: 10px;
 }
 
@@ -140,7 +140,7 @@
 		padding: 0;
 		height: 80px;
 		width: 80px;
-		cursor: url('/Images/High-Res_XP_Icons/Cursor_hand.png'), auto;
+		cursor: url('/images/retro/xp-icons/cursor-hand.png'), auto;
 		margin: 10px;
 		user-select: none;
     }
@@ -219,7 +219,7 @@
       font-family: inherit;
       line-height: normal;
       border: 1px solid rgba(255,255,255,0.3);
-      cursor:  url('/Images/High-Res_XP_Icons/Cursor_hand.png'), auto;
+      cursor:  url('/images/retro/xp-icons/cursor-hand.png'), auto;
       font-size: 12px;
       font-weight: bold;
       display: flex;

@@ -14,7 +14,7 @@ const items = [
         </a>
       </p>
     ),
-    image: <img src="/Images/tackaja.WebP" alt="Student som kollar på en mobil" />,
+    image: <img src="/images/student-life/accept-admission.webp" alt="Student som kollar på en mobil" />,
   },
   {
     title: 'Boende',
@@ -26,7 +26,7 @@ const items = [
         runt med folk i din klass om de har något annat tips.
       </p>
     ),
-    image: <img src="/Images/tviste.jpg" alt="BLA BLA" />,
+    image: <img src="/images/campus/student-housing.jpg" alt="BLA BLA" />,
   },
   {
     title: 'Kåren',
@@ -45,7 +45,7 @@ const items = [
         </div>
       </>
     ),
-    image: <img src="/Images/ntk.jpg" alt="Kåren vid campusdammen" />,
+    image: <img src="/images/campus/ntk.jpg" alt="Kåren vid campusdammen" />,
   },
   {
     title: 'Mottagningen',
@@ -58,7 +58,7 @@ const items = [
         i någon mån!
       </p>
     ),
-    image: <img src="/Images/mottagningen.jpg" alt="N0llor under mottagningen" />,
+    image: <img src="/images/events/orientation.jpg" alt="N0llor under mottagningen" />,
   },
   {
     title: 'Hitta på campus',
@@ -70,7 +70,7 @@ const items = [
         specifika salar.
       </p>
     ),
-    image: <img src="/Images/flygbild-universitet.jpg" alt="flygbild över umeå universitet" />,
+    image: <img src="/images/campus/university-aerial.jpg" alt="flygbild över umeå universitet" />,
   },
   {
     title: 'Transport',
@@ -82,7 +82,7 @@ const items = [
         ett billigt och enkelt sätt när det inte är för mycket snö.
       </p>
     ),
-    image: <img src="/Images/lindellhallen-cyklar.jpg" alt="cyklar vid lindellhallen" />,
+    image: <img src="/images/campus/lindellhallen-bikes.jpg" alt="cyklar vid lindellhallen" />,
   },
   {
     title: 'Kurslitteratur',
@@ -94,7 +94,7 @@ const items = [
         men även om de har anteckningar eller sammanfattningsdokument att dela med sig av.
       </p>
     ),
-    image: <img src="/Images/kurslitteratur.jpg" alt="bokhyllor" />,
+    image: <img src="/images/student-life/textbooks.jpg" alt="bokhyllor" />,
   },
   {
     title: 'Mat och lunchtips',
@@ -106,7 +106,7 @@ const items = [
         de mer prisvärda studentcaféerna!
       </p>
     ),
-    image: <img src="/Images/mitum.png" alt="Kårfiket Mitum" />,
+    image: <img src="/images/campus/mitum.png" alt="Kårfiket Mitum" />,
   },
   {
     title: 'Origo',
@@ -117,7 +117,7 @@ const items = [
         Det är öppet mycket under mottagningen, och annars är det öppet för pub på tisdagar samt nattklubb fredagar och lördagar. Origo drivs av studenter för studenter.
       </p>
     ),
-    image: <img src="/Images/Kårhuset_Origo.jpg" alt="Kårhuset origo" />,
+    image: <img src="/images/campus/student-union-origo.jpg" alt="Kårhuset origo" />,
   },
   {
     title: 'IKSU',
@@ -128,7 +128,7 @@ const items = [
         medlemskap samt ytterligare rabatt om du är kårmedlem.
       </p>
     ),
-    image: <img src="/Images/Iksu_Sport.jpg" alt="IKSU" />,
+    image: <img src="/images/campus/iksu-sport.jpg" alt="IKSU" />,
   },
   {
     title: 'Sittning',
@@ -139,7 +139,7 @@ const items = [
         med finkläderna. Sittningar hålls ofta på kårhusen.
       </p>
     ),
-    image: <img src="/Images/sittning-origo.jpg" alt="dukat bord origo" />,
+    image: <img src="/images/events/formal-dinner-origo.jpg" alt="dukat bord origo" />,
   },
   {
     title: 'Festerier',
@@ -149,7 +149,7 @@ const items = [
         Party Providers och festeriet för Interaktion &amp; Design heter IndivID.
       </p>
     ),
-    image: <img src="/Images/tyska-striden.jpg" alt="tyska striden med IndivID" />,
+    image: <img src="/images/events/tyska-striden.jpg" alt="tyska striden med IndivID" />,
   },
   {
     title: 'Ovvar',
@@ -162,7 +162,7 @@ const items = [
         dig i vad du gör med den.
       </p>
     ),
-    image: <img src="/Images/dataovvar.jpeg" alt="dataovvar" />,
+    image: <img src="/images/student-life/cs-overalls.jpeg" alt="dataovvar" />,
   },
 ];
 

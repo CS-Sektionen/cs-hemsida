@@ -82,7 +82,7 @@ export function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
                 onClick={(e) => toggleDropdown(index, e.currentTarget)}
               >
                 {section.label}
-                <img src="/Images/line-angle-down-icon.svg" alt="" />
+                <img src="/images/icons/chevron-down.svg" alt="" />
               </button>
               <ul
                 id={`dropdown-wide-${index}`}
@@ -143,7 +143,7 @@ export function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
                   onClick={(e) => toggleDropdown(index, e.currentTarget)}
                 >
                   {section.label}
-                  <img src="/Images/line-angle-down-icon.svg" alt="" />
+                  <img src="/images/icons/chevron-down.svg" alt="" />
                 </button>
                 <ul
                   id={`dropdown-resp-${index}`}
@@ -195,7 +195,7 @@ export function HomeLogo({ setSidebarOpen }: HomeLogoProps) {
     <div className="home-logo">
       <Link className="logo-link" to="/" hrefLang="sv" onClick={() => setSidebarOpen(false)}>
         <span>
-          <img src="/Images/CS-logga.png" alt="Länk till huvudsidan" />
+          <img src="/images/logos/cs-logo.png" alt="Länk till huvudsidan" />
         </span>
       </Link>
     </div>

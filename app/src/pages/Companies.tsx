@@ -25,8 +25,8 @@ export function Companies() {
 
       <main id="main">
          <Reveal className={`program-card ${styles['program-card']}`}>
-          <div className={styles['info-ruta']}>
-            <div className="info-ruta-text">
+          <div className={styles['info-box']}>
+            <div className="info-box-text">
               <h3>Under utveckling</h3>
               <p>
                 Denna sida är under utveckling och kommer snart att innehålla mer information om hur företag kan samarbeta med CS-sektionen.
@@ -48,8 +48,8 @@ export function Companies() {
           </p>
         </Reveal>
 
-        <Reveal className="pris-tabell">
-          <div className={styles['tabell-text']}>
+        <Reveal className="price-table">
+          <div className={styles['table-text']}>
             <h2>Marknadsföringsmöjligheter</h2>
             <p>Kort intro av vad vi erbjuder, lite beskrivning och sånt.</p>
           </div>
@@ -98,7 +98,7 @@ export function Companies() {
           </div>
         </Reveal>
 
-        <Reveal className="contact-arbetsmarknad">
+        <Reveal className="contact-industry-relations">
           <div className={styles['contact-text']}>
             <h2>Kontakta arbetsmarknadsutskottet</h2>
             <p>

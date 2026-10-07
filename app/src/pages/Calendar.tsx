@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import styles from './Kalender.module.css';
+import styles from './Calendar.module.css';
 import { Reveal } from '../components/Reveal';
 import { useIsDesktop } from '../hooks/useIsDesktop';
 
@@ -15,7 +15,7 @@ function useGancioScript() {
   }, []);
 }
 
-export function Kalender() {
+export function Calendar() {
   useGancioScript();
   const isDesktop = useIsDesktop();
 
