@@ -31,7 +31,7 @@ const categories: Category[] = [
     title: 'Presidiet',
     members: [
       {
-        image: '/Images/styrelse-bilder/ordforande.jpg',
+        image: '/Images/Styrelsen26-27/ture.jpg',
         imageAlt: 'ordförande',
         name: 'Ture Åström Säfsten',
         email: 'ordf@cssektionen.se',
@@ -52,7 +52,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/cedric.jpg',
         imageAlt: 'kassör',
         name: 'Cedric Strand',
         email: 'ekonomi@cssektionen.se',
@@ -75,7 +75,7 @@ const categories: Category[] = [
     title: 'Presidiestöd',
     members: [
       {
-        image: '/Images/styrelse-bilder/vice.jpg',
+        image: '/Images/Styrelsen26-27/lukasW.jpg',
         imageAlt: 'vice ordförande',
         name: 'Lukas Walther',
         email: 'vice@cssektionen.se',
@@ -92,15 +92,13 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/kevin.jpg',
         imageAlt: 'sekreterare',
         name: 'Kevin Molin',
         email: 'sekreterare@cssektionen.se',
         role: 'Sekreterare',
         description: (
           <>
-            <br />
-            <br />
             Min uppgift är att aktivt delta i de styrelsemöten, evenemang och övriga
             sammankomster och föra protokoll över vad som sägs, bestäms och tas upp. Protokollet ska sedan signeras och publiceras på CS-sektionens hemsida
             , så att alla medlemmar kan ta del av det som har diskuterats och beslutats.
@@ -128,15 +126,13 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder/manar.jpg',
+        image: '/Images/Styrelsen26-27/manar.jpg',
         imageAlt: 'Kommunikationsutskottet',
         name: 'Manar Al-Latifi',
         email: 'kommunikation@cssektionen.se',
         role: 'Kommunikations­utskottet',
         description: (
           <>
-            <br />
-            <br />
             Jag ansvarar för att information når ut till medlemmarna, och gör PR åt sektionen och kåren. 
             I detta ingår att hålla våra informationskanaler aktiva och attraktiva så att medlemmar
             får den informationen vi vill förmedla samt att vi ska locka nya medlemmar.
@@ -144,7 +140,7 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder/elias.jpg',
+        image: '/Images/Styrelsen26-27/elias.jpg',
         imageAlt: 'studiesociala utskottet',
         name: 'Elias Svensson',
         email: 'studiesocial@cssektionen.se',
@@ -162,15 +158,13 @@ const categories: Category[] = [
         ),
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/ellinor.jpg',
         imageAlt: 'Utbildningsbevakningsutskottet',
         name: 'Ellinor Rosenberg',
         email: 'utbildning@cssektionen.se',
         role: 'Utbildnings­bevaknings­utskottet',
         description: (
           <>
-            <br />
-            <br />
             Som representant för CS-sektionen inom utbildningsbevakningsenheten så hjälper jag
             studenter med problem rörande utbildning och/eller studiesituation samt
             informerar om deras rättigheter. Jag arbetar för att uppmärksamma och driva de frågor som är relevanta för studenterna inom din
@@ -186,7 +180,7 @@ const categories: Category[] = [
     description: egoDescription,
     members: [
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/hannes.jpg',
         imageAlt: 'C-ego',
         name: 'Hannes Svonni',
         email: 'cego@cssektionen.se',
@@ -194,7 +188,7 @@ const categories: Category[] = [
         description: '',
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/styrelse-bilder/placeholder.jpg',
         imageAlt: 'DV-ego',
         name: 'Hannes Nilsson',
         email: 'dvego@cssektionen.se',
@@ -202,7 +196,7 @@ const categories: Category[] = [
         description: '',
       },
       {
-        image: '/Images/styrelse-bilder-2025/lukas.jpg',
+        image: '/Images/Styrelsen26-27/lukas.jpg',
         imageAlt: 'ID-ego',
         name: 'Lukas Melin',
         email: 'idego@cssektionen.se',

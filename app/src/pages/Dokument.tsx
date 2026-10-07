@@ -18,13 +18,13 @@ const folders = [
     label: 'Stormöten',
   },
   {
-    href: 'https://drive.google.com/file/d/1ifJDG6Tis3j0HITVYspPswnBHWLTixtI/view?usp=sharing',
+    href: 'https://drive.google.com/drive/folders/1u_CjUKSgANE8ZdxMW_SGv2Og3Hlv2m8C?usp=sharing',
     icon: '/Images/High-Res_XP_Icons/File.ico',
     alt: 'Stadgar',
     label: 'Stadgar',
   },
   {
-    href: 'https://drive.google.com/file/d/1wjCk8muc3VIJj-SLu_LN0sv3McVnLUcw/view?usp=sharing',
+    href: 'https://drive.google.com/drive/folders/1QoDMtBfuEvcVum74LFe59QzdkXYjRi_n?usp=sharing',
     icon: '/Images/High-Res_XP_Icons/File.ico',
     alt: 'Reglemente',
     label: 'Reglemente',

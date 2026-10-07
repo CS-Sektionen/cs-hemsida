@@ -27,7 +27,7 @@ export function Sektionsmote() {
 
       <main id="main">
         <Reveal className="info-card-container">
-          <img src="/Images/walking.jpg" alt="studenter som går" />
+          <img src="/Images/stormöte-ht26.jpg" alt="studenter som går" />
           <div className="info-text">
             <h2>Stormöte</h2>
             <p>
