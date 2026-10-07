@@ -5,7 +5,7 @@ import { Reveal } from '../components/Reveal';
 
 const subgroups = [
   {
-    image: '/images/lan-by-cs-logo.png',
+    image: '/images/logos/lan-by-cs-logo.png',
     imageAlt: 'Bild på LANbyCS logga',
     title: 'LANbyCS',
     description: (
@@ -18,7 +18,7 @@ const subgroups = [
     ),
   },
   {
-    image: '/images/join-computer-science.jpg',
+    image: '/images/logos/join-computer-science.jpg',
     imageAlt: 'Bild på DiCS logga',
     title: 'DiCS (Dataintresserade i CS)',
     description: (
@@ -31,7 +31,7 @@ const subgroups = [
     ),
   },
   {
-    image: '/images/macs-logo.png',
+    image: '/images/logos/macs-logo.png',
     imageAlt: 'Bild på märkesgruppens logga',
     title: 'MaCS (Märken av CS)',
     description: (
@@ -43,7 +43,7 @@ const subgroups = [
     ),
   },
   {
-    image: '/images/gib-logo.png',
+    image: '/images/logos/gib-logo.png',
     imageAlt: 'Bild på GIBs logga',
     title: 'Gäris & Ickebinäris (GIB)',
     description: (
@@ -73,7 +73,7 @@ const projectLeads = [
     ),
   },
   {
-    image: '/images/alvar-dics.jpg',
+    image: '/images/people/alvar-dics.jpg',
     imageAlt: 'Projektledare för DiCS',
     name: 'Alvar Sjögren',
     email: 'dics@cssektionen.se',
@@ -93,7 +93,7 @@ const projectLeads = [
     ),
   },
   {
-    image: '/images/emie.jpg',
+    image: '/images/people/emie.jpg',
     imageAlt: 'Ansvarig för MaCS',
     name: 'Emelie Lindahl',
     email: 'emielindahl@gmail.com',

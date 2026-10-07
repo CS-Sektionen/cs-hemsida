@@ -39,7 +39,7 @@ export function Home() {
               </a>
             </div>
           </section>
-          <img src="/images/cs-logo.png" alt="CS-sektionens logga" />
+          <img src="/images/logos/cs-logo.png" alt="CS-sektionens logga" />
         </div>
         <svg className="diagonal-line" preserveAspectRatio="none">
           <line x1="0" y1="85%" x2="100%" y2="100%" stroke="var(--border-blue)" strokeWidth={4} vectorEffect="non-scaling-stroke" />
@@ -48,7 +48,7 @@ export function Home() {
 
       <main id="main">
         <Reveal className="info-card-container">
-          <img src="/images/club-x-2019.jpg" alt="club på Origo" />
+          <img src="/images/events/club-x-2019.jpg" alt="club på Origo" />
           <div className="info-text">
             <h2>För ditt studentliv</h2>
             <p>
@@ -69,20 +69,20 @@ export function Home() {
               sidan &rdquo;Ny student&rdquo; har vi sammanställt saker som är bra att ha koll på när du börjar.
             </p>
           </div>
-          <img src="/images/pond-splash.jpg" alt="Dammplasket i campusdammen" />
+          <img src="/images/events/pond-splash.jpg" alt="Dammplasket i campusdammen" />
         </Reveal>
 
         <Reveal className="program-card">
           <Carousel
             slides={[
               <div className="program-image-content" key="c">
-                <img src="/images/program-computing-engineering.png" alt="logga" />
+                <img src="/images/logos/programs/computing-engineering.png" alt="logga" />
               </div>,
               <div className="program-image-content" key="dv">
-                <img src="/images/program-computer-science.png" alt="logga" />
+                <img src="/images/logos/programs/computer-science.png" alt="logga" />
               </div>,
               <div className="program-image-content" key="id">
-                <img src="/images/program-interaction-design.png" alt="logga" />
+                <img src="/images/logos/programs/interaction-design.png" alt="logga" />
               </div>,
             ]}
           />
@@ -124,7 +124,7 @@ export function Home() {
             </div>
           </div>
           <div className={styles['ntk-image-container']}>
-            <img src="/images/ntk-logo.png" alt="logga NTK" />
+            <img src="/images/logos/ntk-logo.png" alt="logga NTK" />
           </div>
         </Reveal>
 

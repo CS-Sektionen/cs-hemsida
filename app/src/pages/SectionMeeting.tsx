@@ -27,7 +27,7 @@ export function SectionMeeting() {
 
       <main id="main">
         <Reveal className="info-card-container">
-          <img src="/images/general-meeting-autumn-2026.jpg" alt="studenter som går" />
+          <img src="/images/events/general-meeting-autumn-2026.jpg" alt="studenter som går" />
           <div className="info-text">
             <h2>Stormöte</h2>
             <p>
@@ -52,7 +52,7 @@ export function SectionMeeting() {
               i vad som händer, även om man inte själv sitter i styrelsen.
             </p>
           </div>
-          <img src="/images/board-meeting.jpg" alt="BLA BLA" />
+          <img src="/images/events/board-meeting.jpg" alt="BLA BLA" />
         </Reveal>
 
         <Reveal className={`info-card-container ${styles['motion-card']}`} id="motion">

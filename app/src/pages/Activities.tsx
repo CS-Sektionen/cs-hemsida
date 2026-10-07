@@ -33,11 +33,11 @@ export function Activities() {
                 Och såklart så finns CS-sektionen där och säljer våra egna märken, så kom förbi och köp ett märke eller två!
               </p>
             </div>
-            <img src="/images/badge-tuesday.jpg" alt="Märkesförsäljning på tisdagar" />
+            <img src="/images/events/badge-tuesday.jpg" alt="Märkesförsäljning på tisdagar" />
           </Reveal>
 
           <Reveal className={`info-card-container ${styles['info-card-container']}`}>
-            <img src="/images/overalls-inauguration.jpg" alt="Studenter som inviger sina ovvar" />
+            <img src="/images/events/overalls-inauguration.jpg" alt="Studenter som inviger sina ovvar" />
             <div className="info-text">
               <h2>Ovveinvigningen</h2>
               <p>
@@ -57,11 +57,11 @@ export function Activities() {
                 Se till att hålla koll på våra sociala medier och vår kalender för att inte missa när anmälan öppnar!
               </p>
             </div>
-            <img src="/images/are-ski-week.jpg" alt="Åre skidbacke" />
+            <img src="/images/events/are-ski-week.jpg" alt="Åre skidbacke" />
           </Reveal>
 
           <Reveal className={`info-card-container ${styles['info-card-container']}`}>
-            <img src="/images/overalls.jpg" alt="GIB ordnar fika och häng" />
+            <img src="/images/student-life/overalls.jpg" alt="GIB ordnar fika och häng" />
             <div className="info-text">
               <h2>Syjuntor med fika</h2>
               <p>
@@ -79,11 +79,11 @@ export function Activities() {
                   Det finns olika turneringar och aktiviteter, samt bjuds det på stora mängder med snacks och dryck. 
                 </p>
               </div>
-              <img src="/images/lan-1.png" alt="Deltagare som LAN:ar" />
+              <img src="/images/events/lan-1.png" alt="Deltagare som LAN:ar" />
             </Reveal>
 
             <Reveal className={`info-card-container ${styles['info-card-container']}`}>
-              <img src="/images/lan-2.png" alt="Mario Kart-turnering under LAN-event" />
+              <img src="/images/events/lan-2.png" alt="Mario Kart-turnering under LAN-event" />
               <div className="info-text">
                 <p>
                   Du behöver inte vara en hardcore gamer för att delta på LAN-helgerna, utan alla är välkomna oavsett erfarenhet. 
@@ -102,7 +102,7 @@ export function Activities() {
                 Under PUB:arna kan du träffa andra studenter, ta en öl eller en läsk och bara ha kul.
               </p>
             </div>
-            <img src="/images/pub.jpg" alt="PUB anordnad av undergrupp" />
+            <img src="/images/events/pub.jpg" alt="PUB anordnad av undergrupp" />
           </Reveal>
         </div>
       </main>

@@ -18,19 +18,19 @@ export function Footer() {
         <div className="social-media-logos">
           <a className="instagram-link" href="https://www.instagram.com/cs_sektionen/" hrefLang="sv">
             <span className="logo">
-              <img src="/images/instagram.png" alt="Länk till CS Instagram" />
+              <img src="/images/icons/instagram.png" alt="Länk till CS Instagram" />
             </span>
           </a>
 
           <a className="discord-link" href="https://discord.gg/XW3Ry7eZbQ" hrefLang="sv">
             <span className="logo">
-              <img src="/images/discord.png" alt="Länk till CS Discord" />
+              <img src="/images/icons/discord.png" alt="Länk till CS Discord" />
             </span>
           </a>
 
           <a className="hitract-link" href="https://open.hitract.se/HitClub/1662" hrefLang="sv">
             <span className="logo">
-              <img src="/images/hitract-outline.png" alt="Länk till CS Hitract" />
+              <img src="/images/logos/hitract-outline.png" alt="Länk till CS Hitract" />
             </span>
           </a>
         </div>
