@@ -2,16 +2,19 @@
 
 Hemsidan för CS-sektionen vid Umeå universitet — [cssektionen.se](https://cssektionen.se)
 
-Gamla hemsidan hittas vid - [legacy-cs-hemsida](https://github.com/CS-Sektionen/legacy-cs-hemsida)
+Gamla hemsidan hittas vid — [legacy-cs-hemsida](https://github.com/CS-Sektionen/legacy-cs-hemsida)
 
 ## Struktur
 
-- `app/` — själva hemsidan (React + TypeScript + Vite). Det är här allt arbete sker.
+Hemsidan är byggd med React, TypeScript och Vite.
+
+- `src/`: sidor, komponenter och stilar
+- `public/`: bilder och andra filer som kopieras rakt in i builden
+- `scripts/`: hjälpskript som körs vid build
 
 ## Komma igång
 
 ```bash
-cd app
 npm install
 npm run dev
 ```
