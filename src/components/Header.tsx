@@ -195,7 +195,7 @@ export function HomeLogo({ setSidebarOpen }: HomeLogoProps) {
     <div className="home-logo">
       <Link className="logo-link" to="/" hrefLang="sv" onClick={() => setSidebarOpen(false)}>
         <span>
-          <img src="/images/logos/cs-logo.png" alt="Länk till huvudsidan" />
+          <img src="/images/logos/cs-logo.svg" alt="Länk till huvudsidan" />
         </span>
       </Link>
     </div>

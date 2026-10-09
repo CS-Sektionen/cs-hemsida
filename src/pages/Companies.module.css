@@ -163,3 +163,29 @@
 		word-break: break-word;
 	}
 }
+
+
+.program-card {
+	overflow: hidden;
+	padding-block: calc(3rem + 28px);
+}
+
+.program-card::before,
+.program-card::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 28px;
+	background: linear-gradient(-45deg, #f2c94c 25%, var(--dark-purple) 25% 50%, #f2c94c 50% 75%, var(--dark-purple) 75%) 0 0 / 34px 34px;
+}
+
+.program-card::before {
+	top: 0;
+	border-bottom: 2px solid var(--border-blue);
+}
+
+.program-card::after {
+	bottom: 0;
+	border-top: 2px solid var(--border-blue);
+}
