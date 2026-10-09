@@ -308,7 +308,7 @@ header {
 	width: clamp(220px, 10vw, 300px);
 	align-items: center;
 	justify-content: center;
-	padding: 0.3rem 1rem;
+	padding: 0.3rem 0;
 	margin: 1.2rem -0.6rem;
 	visibility: hidden;
 	opacity: 0;
@@ -334,6 +334,12 @@ header {
 
 .navitem-has-no-children a:hover {
 	color: var(--link-blue);
+}
+
+.navitem-children .navitem-has-no-children a {
+	display: block;
+	padding: 0 1rem;
+	line-height: 3rem;
 }
 
 .home-logo {
