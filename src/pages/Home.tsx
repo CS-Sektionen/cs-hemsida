@@ -39,7 +39,7 @@ export function Home() {
               </a>
             </div>
           </section>
-          <img src="/images/logos/cs-logo.png" alt="CS-sektionens logga" />
+          <img src="/images/logos/cs-logo.svg" alt="CS-sektionens logga" />
         </div>
         <svg className="diagonal-line" preserveAspectRatio="none">
           <line x1="0" y1="85%" x2="100%" y2="100%" stroke="var(--border-blue)" strokeWidth={4} vectorEffect="non-scaling-stroke" />
