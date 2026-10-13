@@ -1,0 +1,59 @@
+import { useState } from 'react';
+import type { ReactNode } from 'react';
+import styles from './MemberCard.module.css';
+
+interface MemberCardProps {
+  image: string;
+  imageAlt: string;
+  name: string;
+  email?: string;
+  role: string;
+  description?: ReactNode;
+  compact?: boolean;
+}
+
+export function MemberCard({ image, imageAlt, name, email, role, description, compact }: MemberCardProps) {
+  const [expanded, setExpanded] = useState(false);
+
+  if (compact) {
+    return (
+      <div className={`program-card ${styles['program-card']} ${styles.compact}`}>
+        <div className={styles['image-caption']}>
+          <h4 className={`${styles['board-h4']} ${styles['compact-role']}`}>{role}</h4>
+          <img src={image} alt={imageAlt} />
+          <h3 className={styles['board-h3']}>{name}</h3>
+          {email && (
+            <a className={styles['board-mail']} href={`mailto:${email}`}>
+              {email}
+            </a>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className={`program-card ${styles['program-card']}`}>
+      <div className={styles['image-caption']}>
+        <img src={image} alt={imageAlt} />
+        <h3 className={styles['board-h3']}>{name}</h3>
+        {email && (
+          <a className={styles['board-mail']} href={`mailto:${email}`}>
+            {email}
+          </a>
+        )}
+      </div>
+      <div className={styles['square-text']}>
+        <h4 className={`${styles['board-h4']} ${role.replace(/­/g, '').length > 20 ? styles['long-role'] : ''}`}>
+          {role}
+        </h4>
+        <div className={`${styles['desc-wrapper']} ${expanded ? styles.expanded : ''}`}>
+          <p>{description}</p>
+        </div>
+        <button className={styles['read-more']} onClick={() => setExpanded((prev) => !prev)}>
+          {expanded ? 'Visa mindre' : 'Läs mer'}
+        </button>
+      </div>
+    </div>
+  );
+}

@@ -85,7 +85,6 @@ du skillnader i lockfilen och builden.
 ## Innan du öppnar en pull request
 
 ```bash
-cd app
 npm ci
 npm run lint
 npm run build
