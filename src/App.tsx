@@ -11,6 +11,7 @@ import { NewStudents } from './pages/NewStudents';
 import { Board } from './pages/Board';
 import { Documents } from './pages/Documents';
 import { Calendar } from './pages/Calendar';
+import { NotFound } from './pages/NotFound';
 
 function App() {
   useScrollToTop();
@@ -28,6 +29,7 @@ function App() {
         <Route path="/dokument" element={<Documents />} />
         <Route path="/kalender" element={<Calendar />} />
         <Route path="/undergrupper" element={<Subgroups />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
