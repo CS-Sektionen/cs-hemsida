@@ -7,13 +7,15 @@
   Header set X-Robots-Tag "noindex, nofollow"
 </IfModule>
 
-# Serve real files and folders as-is, send every other path to the React
-# app. This makes scripts/generate-static-routes.js unnecessary here.
+# Serve real files as-is, send every other path to the React app. This makes
+# scripts/generate-static-routes.js unnecessary here.
+# DirectorySlash is off because Apache sits behind Loopia's nginx and would
+# redirect /kontakt to http://.../kontakt/, dropping HTTPS for one hop.
+DirectorySlash Off
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ index.html [L]
 </IfModule>
 
