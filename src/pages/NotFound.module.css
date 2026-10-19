@@ -1,0 +1,32 @@
+/*---------- 404 ----------*/
+/*
+* 	Centrerad text med en knapp tillbaka till startsidan.
+*/
+
+.not-found {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 1.5rem;
+	min-height: 60vh;
+}
+
+.code {
+	color: var(--lt-blue);
+	font-size: clamp(6em, 18vw, 12em);
+	line-height: 1;
+	margin: 0;
+}
+
+.not-found > h2,
+.not-found > p {
+	margin: 0;
+}
+
+@media only screen and (max-width: 750px) {
+	.not-found {
+		/* Den fasta menyn täcker toppen av sidan på mobil. */
+		padding-top: 7rem;
+		min-height: 50vh;
+	}
+}
