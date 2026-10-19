@@ -1,33 +1,7 @@
-# Apache config for dev.cssektionen.se (Loopia Unix).
-# deploy-dev.yml copies this into dist/.htaccess before upload. It lives
-# outside public/ so it never reaches prod on Autobahn.
+# Extra Apache config for dev.cssektionen.se only.
+# deploy-dev.yml appends this to dist/.htaccess (from public/.htaccess).
 
 # Keep dev out of search engines.
 <IfModule mod_headers.c>
   Header set X-Robots-Tag "noindex, nofollow"
-</IfModule>
-
-# Serve real files as-is, send every other path to the React app. This makes
-# scripts/generate-static-routes.js unnecessary here.
-# DirectorySlash is off because Apache sits behind Loopia's nginx and would
-# redirect /kontakt to http://.../kontakt/, dropping HTTPS for one hop.
-DirectorySlash Off
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^ index.html [L]
-</IfModule>
-
-# Vite puts a content hash in every filename under /assets, so those can be
-# cached forever. The HTML must always be revalidated to pick up new builds.
-<IfModule mod_headers.c>
-  <FilesMatch "\.html$">
-    Header set Cache-Control "no-cache"
-  </FilesMatch>
-</IfModule>
-<IfModule mod_headers.c>
-  <If "%{REQUEST_URI} =~ m#^/assets/#">
-    Header set Cache-Control "public, max-age=31536000, immutable"
-  </If>
 </IfModule>

@@ -32,8 +32,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Add Apache config
-        run: cp deploy/dev.htaccess dist/.htaccess
+      - name: Add dev Apache config
+        run: cat deploy/dev.htaccess >> dist/.htaccess
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
