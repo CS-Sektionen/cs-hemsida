@@ -1,9 +1,10 @@
 name: Deploy dev
 
-# Publishes the chosen branch to dev.cssektionen.se (Loopia Unix).
-# Manual only: run it from the Actions tab and pick a branch.
+# Publishes infra/loopia-unix to dev.cssektionen.se (Loopia Unix) on every push.
+# Temporary: remove this file before the branch is merged into dev.
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "infra/loopia-unix" ]
 
 # One dev deploy at a time. Separate group from prod so they never block each other.
 concurrency:
