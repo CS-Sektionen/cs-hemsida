@@ -1,7 +1,0 @@
-# Extra Apache config for dev.cssektionen.se only.
-# deploy-dev.yml appends this to dist/.htaccess (from public/.htaccess).
-
-# Keep dev out of search engines.
-<IfModule mod_headers.c>
-  Header set X-Robots-Tag "noindex, nofollow"
-</IfModule>
