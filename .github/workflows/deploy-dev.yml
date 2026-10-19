@@ -37,8 +37,8 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: ${{ vars.LOOPIA_DEV_FTP_SERVER }}
-          username: ${{ vars.LOOPIA_DEV_FTP_USERNAME }}
+          server: ftpcluster.loopia.se
+          username: dev.cssektionen
           password: ${{ secrets.LOOPIA_DEV_FTP_PASSWORD }}
           port: 21
           local-dir: ./dist/
