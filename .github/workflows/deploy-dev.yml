@@ -44,5 +44,7 @@ jobs:
           username: dev.cssektionen
           password: ${{ secrets.LOOPIA_DEV_FTP_PASSWORD }}
           port: 21
+          # Explicit TLS, so the password and files are never sent in plain text.
+          protocol: ftps
           local-dir: ./dist/
           log-level: verbose
