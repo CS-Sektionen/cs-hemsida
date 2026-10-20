@@ -1,6 +1,8 @@
+import { useState, type FormEvent } from 'react';
 import styles from './Contact.module.css';
 import { ContactCard } from '../components/ContactCard';
 import { Reveal } from '../components/Reveal';
+import { scrollToId } from '../hooks/useScrollToId';
 
 const categories = [
   {
@@ -95,6 +97,21 @@ const categories = [
 ]
 
 export function Contact() {
+  const [formStatus, setFormStatus] = useState<string | null>(null);
+
+  // contact.php redirects to /kontakt?formular=skickat or ?formular=fel.
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    try {
+      const response = await fetch(form.action, { method: 'POST', body: new FormData(form) });
+      setFormStatus(new URL(response.url).searchParams.get('formular') ?? 'fel');
+    } catch {
+      setFormStatus('fel');
+    }
+    scrollToId('#motioner');
+  }
+
   return (
     <div className={styles.page}>
       <div className={`heading-frame ${styles['heading-frame']}`}>
@@ -138,45 +155,68 @@ export function Contact() {
           </p>
 
           <div className={`contact-container ${styles['contact-container']}`}>
-            <form action="mailto:kommunikation@cssektionen.se">
-              <label htmlFor="first-name">För- och efternamn</label>
-              <input type="text" id="first-name" placeholder="Ditt namn..." required />
-
-              <label htmlFor="last-name">Mejladress</label>
-              <input type="text" id="last-name" placeholder="Din mejladress..." required />
-
-              <label htmlFor="program">Program</label>
-              <select id="program" required defaultValue="">
-                <option disabled value="">
-                  Välj ditt program
-                </option>
-                <option>Civiling. Interaktion &amp; Design</option>
-                <option>Civiling. Datavetenskap</option>
-                <option>Kandidatprogrammet i Datavetenskap</option>
-                <option>Masterprogrammet i Datavetenskap</option>
-                <option>Masterprogrammet i AI</option>
-              </select>
-
-              <label htmlFor="business">Ärende</label>
-              <select id="business" required defaultValue="">
-                <option disabled value="">
-                  Vad gäller ditt ärende?
-                </option>
-                <option>Motion till styrelsemöte</option>
-                <option>Fråga eller fundering</option>
-                <option>Förslag</option>
-                <option>Annat</option>
-              </select>
-
-              <label htmlFor="subject">Ämne</label>
-              <textarea id="subject" placeholder="Meddelande..." required></textarea>
-
-              <div className={styles['submit-button']}>
-                <div className="filled-button">
-                  <input type="submit" value="Skicka" />
+            {formStatus === 'skickat' ? (
+              <>
+                <p>Tack! Ditt meddelande har skickats till kommunikationsutskottet.</p>
+                <div className={styles['submit-button']}>
+                  <button type="button" className="filled-button" onClick={() => setFormStatus(null)}>
+                    Skicka ett nytt meddelande
+                  </button>
                 </div>
-              </div>
-            </form>
+              </>
+            ) : (
+              <>
+                {formStatus === 'fel' && (
+                  <p role="alert">Något gick fel och meddelandet skickades inte. Försök igen, eller mejla motioner@cssektionen.se direkt.</p>
+                )}
+
+                <form action="/contact.php" method="post" onSubmit={handleSubmit}>
+                  <label htmlFor="name">För- och efternamn</label>
+                  <input type="text" id="name" name="name" autoComplete="name" maxLength={100} placeholder="Ditt namn..." required />
+
+                  <label htmlFor="email">Mejladress</label>
+                  <input type="email" id="email" name="email" autoComplete="email" maxLength={254} placeholder="Din mejladress..." required />
+
+                  <label htmlFor="program">Program</label>
+                  <select id="program" name="program" required defaultValue="">
+                    <option disabled value="">
+                      Välj ditt program
+                    </option>
+                    <option>Civiling. Interaktion &amp; Design</option>
+                    <option>Civiling. Datavetenskap</option>
+                    <option>Kandidatprogrammet i Datavetenskap</option>
+                    <option>Masterprogrammet i Datavetenskap</option>
+                    <option>Masterprogrammet i AI</option>
+                  </select>
+
+                  <label htmlFor="topic">Ärende</label>
+                  <select id="topic" name="topic" required defaultValue="">
+                    <option disabled value="">
+                      Vad gäller ditt ärende?
+                    </option>
+                    <option>Motion till styrelsemöte</option>
+                    <option>Fråga eller fundering</option>
+                    <option>Förslag</option>
+                    <option>Annat</option>
+                  </select>
+
+                  <label htmlFor="message">Meddelande</label>
+                  <textarea id="message" name="message" maxLength={5000} placeholder="Meddelande..." required></textarea>
+
+                  {/* Honeypot, see contact.php */}
+                  <div className={styles['honeypot']} aria-hidden="true">
+                    <label htmlFor="website">Lämna tomt</label>
+                    <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+                  </div>
+
+                  <div className={styles['submit-button']}>
+                    <div className="filled-button">
+                      <input type="submit" value="Skicka" />
+                    </div>
+                  </div>
+                </form>
+              </>
+            )}
           </div>
         </Reveal>
       </main>
