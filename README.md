@@ -9,8 +9,9 @@ Gamla hemsidan hittas vid — [legacy-cs-hemsida](https://github.com/CS-Sektione
 Hemsidan är byggd med React, TypeScript och Vite.
 
 - `src/`: sidor, komponenter och stilar
-- `public/`: bilder och andra filer som kopieras rakt in i builden
-- `scripts/`: hjälpskript som körs vid build
+- `public/`: bilder och andra filer som kopieras rakt in i builden, bland annat
+  `.htaccess` med Apache-konfigen för servern
+- `deploy/`: extra konfig som bara används på dev.cssektionen.se
 
 ## Komma igång
 
@@ -23,7 +24,8 @@ Sidan kommer upp på `http://localhost:5173`.
 
 ## Branches
 
-- **`dev`** — standardbranch. Allt arbete bör göras här. Inget här publiceras på hemsidan.
+- **`dev`** — standardbranch. Allt arbete bör göras här. Publiceras på
+  [dev.cssektionen.se](https://dev.cssektionen.se) för testning, inte på hemsidan.
 - **`main`** — det som ligger live just nu.
 
 Jobba aldrig direkt i `dev`. Skapa en egen branch, och gör en pull request mot `dev`:
@@ -42,6 +44,13 @@ Hur vi jobbar i repot står i [CONTRIBUTING](CONTRIBUTING.md).
 
 **Att merga `dev` → `main` publicerar sidan direkt.** GitHub Actions kör en build och laddar
 upp allt till Loopia via FTP. Läs igenom hela diffen i pull requesten innan du mergar.
+
+Sidan körs på Loopias Unix-plattform (Apache). `public/.htaccess` skickar alla adresser
+som inte är riktiga filer till React-appen, så nya sidor behöver bara läggas till i `src/App.tsx`.
+
+Varje merge till `dev` publiceras på samma sätt till
+[dev.cssektionen.se](https://dev.cssektionen.se). Kolla att allt ser rätt ut där innan
+du gör en pull request från `dev` till `main`. Dev-sidan ska inte synas i sökmotorer.
 
 Använd alltid **merge commit** när du mergar `dev` → `main`. Aldrig squash eller rebase:
 det får brancherna att glida isär permanent, och varje kommande release visar då upp gamla

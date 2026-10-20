@@ -20,15 +20,16 @@ länk är en bra pull request.
 
 ## Arbetsgång
 
-1. Utgå från `dev` och skapa en egen branch: `fix/`, `feat/`, `chore/` eller `docs/`
-   följt av en kort beskrivning.
+1. Utgå från `dev` och skapa en egen branch: `fix/`, `feat/`, `chore/`, `docs/` eller
+   `infra/` följt av en kort beskrivning.
 2. Gör ändringen. Håll branchen kortlivad, en uppgift per branch.
 3. Öppna en pull request mot `dev`.
 4. Vänta på att builden blir grön och låt någon annan titta på den.
 
-Du kan inte råka publicera något på hemsidan av misstag. Det som ligger i `dev`
-syns ingenstans utåt, och publiceringen är ett eget steg som någon gör
-medvetet. Se **Publicering** i README.
+Du kan inte råka publicera något på hemsidan av misstag. Det som mergas till
+`dev` hamnar bara på [dev.cssektionen.se](https://dev.cssektionen.se), där du
+kan kolla att allt ser rätt ut. Publiceringen på hemsidan är ett eget steg som
+någon gör medvetet. Se **Publicering** i README.
 
 Är du osäker på om en idé är rimlig, öppna en pull request ändå och skriv vad
 du funderar på. Det är ett bra sätt att få syn på saker tillsammans.
