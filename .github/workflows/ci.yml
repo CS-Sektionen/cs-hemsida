@@ -26,5 +26,8 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Lint PHP
+        run: find public -name '*.php' -print0 | xargs -0 -n1 php -l
+
       - name: Build
         run: npm run build
