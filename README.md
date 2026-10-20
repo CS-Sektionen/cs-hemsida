@@ -9,8 +9,9 @@ Gamla hemsidan hittas vid — [legacy-cs-hemsida](https://github.com/CS-Sektione
 Hemsidan är byggd med React, TypeScript och Vite.
 
 - `src/`: sidor, komponenter och stilar
-- `public/`: bilder och andra filer som kopieras rakt in i builden
-- `scripts/`: hjälpskript som körs vid build
+- `public/`: bilder och andra filer som kopieras rakt in i builden, bland annat
+  `.htaccess` med Apache-konfigen för servern
+- `deploy/`: extra konfig som bara används på dev.cssektionen.se
 
 ## Komma igång
 
@@ -43,6 +44,9 @@ Hur vi jobbar i repot står i [CONTRIBUTING](CONTRIBUTING.md).
 
 **Att merga `dev` → `main` publicerar sidan direkt.** GitHub Actions kör en build och laddar
 upp allt till Loopia via FTP. Läs igenom hela diffen i pull requesten innan du mergar.
+
+Sidan körs på Loopias Unix-plattform (Apache). `public/.htaccess` skickar alla adresser
+som inte är riktiga filer till React-appen, så nya sidor behöver bara läggas till i `src/App.tsx`.
 
 Varje merge till `dev` publiceras på samma sätt till
 [dev.cssektionen.se](https://dev.cssektionen.se). Kolla att allt ser rätt ut där innan
