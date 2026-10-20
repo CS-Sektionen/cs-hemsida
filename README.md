@@ -23,7 +23,8 @@ Sidan kommer upp på `http://localhost:5173`.
 
 ## Branches
 
-- **`dev`** — standardbranch. Allt arbete bör göras här. Inget här publiceras på hemsidan.
+- **`dev`** — standardbranch. Allt arbete bör göras här. Publiceras på
+  [dev.cssektionen.se](https://dev.cssektionen.se) för testning, inte på hemsidan.
 - **`main`** — det som ligger live just nu.
 
 Jobba aldrig direkt i `dev`. Skapa en egen branch, och gör en pull request mot `dev`:
@@ -42,6 +43,10 @@ Hur vi jobbar i repot står i [CONTRIBUTING](CONTRIBUTING.md).
 
 **Att merga `dev` → `main` publicerar sidan direkt.** GitHub Actions kör en build och laddar
 upp allt till Loopia via FTP. Läs igenom hela diffen i pull requesten innan du mergar.
+
+Varje merge till `dev` publiceras på samma sätt till
+[dev.cssektionen.se](https://dev.cssektionen.se). Kolla att allt ser rätt ut där innan
+du gör en pull request från `dev` till `main`. Dev-sidan ska inte synas i sökmotorer.
 
 Använd alltid **merge commit** när du mergar `dev` → `main`. Aldrig squash eller rebase:
 det får brancherna att glida isär permanent, och varje kommande release visar då upp gamla

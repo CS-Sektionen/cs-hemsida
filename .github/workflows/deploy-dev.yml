@@ -1,0 +1,48 @@
+name: Deploy dev
+
+# Runs on every push to dev and publishes it to dev.cssektionen.se (Loopia Unix),
+# so changes can be checked there before they go to main.
+on:
+  push:
+    branches: [ "dev" ]
+
+  workflow_dispatch:
+
+# One dev deploy at a time. Separate group from prod so they never block each other.
+concurrency:
+  group: deploy-dev
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    name: Push files to dev
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Add dev Apache config
+        run: cat deploy/dev.htaccess >> dist/.htaccess
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: ftpcluster.loopia.se
+          username: dev.cssektionen
+          password: ${{ secrets.LOOPIA_DEV_FTP_PASSWORD }}
+          port: 21
+          local-dir: ./dist/
+          log-level: verbose
