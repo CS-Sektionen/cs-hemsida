@@ -117,7 +117,7 @@ const items = [
         Det är öppet mycket under mottagningen, och annars är det öppet för pub på tisdagar samt nattklubb fredagar och lördagar. Origo drivs av studenter för studenter.
       </p>
     ),
-    image: <img src="/images/campus/student-union-origo.jpg" alt="Kårhuset origo" />,
+    image: <img className={styles['origo-image']} src="/images/campus/origo-entrance-queue.webp" alt="Kö utanför kårhuset Origo" />,
   },
   {
     title: 'IKSU',
