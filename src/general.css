@@ -282,12 +282,15 @@ header {
 	gap: 1rem;
 }
 
-.navitem-has-children img {
-	filter: invert(100%);
+/* Pilen ritas med textfärgen så den byter färg tillsammans med texten */
+.chevron {
+	width: 0.92rem;
 	height: 0.5rem;
+	background-color: currentColor;
+	mask: url(/images/icons/chevron-down.svg) center / contain no-repeat;
 }
 
-.active img {
+.active .chevron {
 	transform: rotate(180deg);
 }
 
@@ -864,10 +867,6 @@ footer {
 		font-size: 1.4em;
 	}
 
-	.sidebar .navitem-has-children img {
-		height: 0.5rem;
-	}
-
 	.sidebar .navitem-children {
 		position: static;
 		display: flex;
@@ -925,6 +924,7 @@ footer {
 		cursor: pointer;
 		background: none;
 		border: none;
+		color: var(--white);
 		margin: 0;
 		margin-right: 3vw;
 		padding: 0;
@@ -936,8 +936,15 @@ footer {
 		width: 28px;
 		height: 3px;
 		border-radius: 2px;
-		background-color: var(--white);
+		background-color: currentColor;
 		transition: transform 0.3s ease, opacity 0.3s ease;
+	}
+
+	/* Bara på enheter med mus, annars fastnar hoverfärgen efter ett tryck */
+	@media (hover: hover) {
+		.hamburger:hover {
+			color: var(--link-blue);
+		}
 	}
 
 	.hamburger.open .bar:nth-child(1) {
