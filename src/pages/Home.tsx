@@ -48,7 +48,7 @@ export function Home() {
 
       <main id="main">
         <Reveal className="info-card-container">
-          <img src="/images/events/club-x-2019.jpg" alt="club på Origo" />
+          <img src="/images/events/party-dj-booth.webp" alt="Fest med DJ-bås och dansgolv" />
           <div className="info-text">
             <h2>För ditt studentliv</h2>
             <p>
