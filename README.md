@@ -13,6 +13,18 @@ Hemsidan är byggd med React, TypeScript och Vite.
   `.htaccess` med Apache-konfigen för servern
 - `deploy/`: extra konfig som bara används på dev.cssektionen.se
 
+## Paket
+
+Vi håller nere antalet paket så att sidan är lätt att underhålla.
+Lägg bara till ett nytt om det sparar mycket arbete, och skriv upp det här.
+
+- `react`, `react-dom`: hela sidan är byggd i React
+- `react-router-dom`: sidnavigering utan att ladda om sidan
+- `animejs`: introanimationen på startsidan
+- `vite`, `@vitejs/plugin-react`: dev-server och build
+- `typescript`: typkontroll
+- `oxlint`: lint, körs på varje pull request
+
 ## Komma igång
 
 ```bash

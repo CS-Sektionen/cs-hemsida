@@ -60,6 +60,17 @@ Branchnamn skrivs också på engelska, med bindestreck mellan orden:
 Kommentarer skrivs oftast på svenska, och så får det gärna fortsätta vara.
 Text som syns på hemsidan är förstås också på svenska.
 
+## Brytpunkter
+
+Använd samma brytpunkter som resten av sidan:
+
+- **750px**: mobilversionen, `max-width: 750px` (och `min-width: 751px` för
+  desktop, även i `src/hooks/useIsDesktop.ts`)
+- **1100px**: hamburgermenyn tar över från den breda menyn, i `src/general.css`
+- **900px**: styrelsekorten byter layout, i `src/components/MemberCard.module.css`
+
+Lägger du till en ny brytpunkt, skriv upp den här.
+
 ## Paketlåset
 
 **Ändrar du `package.json` måste `package-lock.json` med i samma commit.**
