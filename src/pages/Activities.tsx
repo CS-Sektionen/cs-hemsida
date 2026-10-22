@@ -102,7 +102,7 @@ export function Activities() {
                 Under PUB:arna kan du träffa andra studenter, ta en öl eller en läsk och bara ha kul.
               </p>
             </div>
-            <img src="/images/events/pub.jpg" alt="PUB anordnad av undergrupp" />
+            <img src="/images/events/pub.webp" alt="Studenter köar till maten på en PUB" />
           </Reveal>
         </div>
       </main>
