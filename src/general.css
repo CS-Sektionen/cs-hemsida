@@ -234,7 +234,7 @@ header {
 	background-color: var(--dark-purple);
 	border-bottom: 2px solid var(--purple);
 	gap: 100px;
-	padding: 0.8rem clamp(1rem, 4vw, 6rem);
+	padding: 0 clamp(1rem, 4vw, 6rem);
 	width: 100%;
 	max-width: 100%;
 	z-index: 3;
@@ -251,12 +251,22 @@ header {
 	margin: 0;
 	list-style: none;
 	min-width: 0;
+	align-self: stretch;
 }
 
 .header-list1 > li, .header-list2 > li {
 	list-style-type: none;
 	justify-self: center;
 	white-space: nowrap;
+	display: flex;
+}
+
+/* Hela menyns höjd går att klicka på, inte bara texten */
+.header-list1 > li > :first-child, .header-list2 > li > :first-child {
+	display: flex;
+	align-items: center;
+	min-height: 56px;
+	padding: 0 0.8rem;
 }
 
 .navitem-has-children {
@@ -299,7 +309,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 0.3rem 0;
-	margin: 1.2rem -0.6rem;
+	margin: 1.2rem 0;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 400ms ease-in, visibility 0ms ease-in 250ms;
