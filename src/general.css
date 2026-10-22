@@ -228,15 +228,13 @@ header {
 
 .navbar-wide {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 	grid-template-rows: 1fr;
-	justify-content: center;
-	justify-self: center;
 	align-items: center;
 	background-color: var(--dark-purple);
 	border-bottom: 2px solid var(--purple);
-	gap: clamp(150px, 16vw, 400px);
-	padding: 0.8rem clamp(1px, 2vw, 20px);
+	gap: 100px;
+	padding: 0.8rem clamp(1rem, 4vw, 6rem);
 	width: 100%;
 	max-width: 100%;
 	z-index: 3;
@@ -244,28 +242,20 @@ header {
 
 .navbar-resp {display: none;}
 
+/* Varje menyval får en lika stor ruta (en sjättedel av raden) med texten centrerad */
 .header-list1, .header-list2 {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	align-items: center;
-	display: flex;
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	gap: clamp(1px, 6vw, 200px);
 	min-width: 0;
-	flex-wrap: wrap;
-}
-
-.header-list1 {
-	justify-content: flex-end;
-}
-
-.header-list2 {
-	justify-content: flex-start;
 }
 
 .header-list1 > li, .header-list2 > li {
 	list-style-type: none;
-	display: inline-block;
+	justify-self: center;
 	white-space: nowrap;
 }
 
@@ -414,7 +404,7 @@ header {
 	transform: scale(1.05);
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1101px) {
 	.hamburger { display: none; }
 
 	.header-list > li { display: inline-block; }
@@ -779,44 +769,9 @@ footer {
 
 
 
-/* MOBILVERSION */
+/* MENY: hamburgermeny under 1100px, resten av mobilversionen börjar vid 750px */
 
-@media only screen and (max-width: 750px) {
-	body {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.container {
-		max-width: 100%;
-		width: 100%;
-		height: 100%;
-		gap: 5vh;
-		margin-top: 0;
-		margin-bottom: 0;
-		border: none;
-		border-left: none;
-		border-right: none;
-	}
-
-	main {gap: 10vh; padding: 5vw;}
-
-	h1 { font-size: clamp(2em, 10vw, 5em); }
-	h2 { font-size: 2em; }
-	h3 { font-size: 1.3em; }
-	h4 { font-size: 1em; }
-	p, a {font-size: 0.7em;}
-
-	.heading-card {
-		text-align: center;
-		max-width: 100%;
-	}
-
-	.heading-content {
-		grid-template-columns: 1fr;
-		justify-items: center;
-	}
-
+@media only screen and (max-width: 1100px) {
 	.navbar-wide {display: none;}
 
 	.navbar-resp {
@@ -985,6 +940,46 @@ footer {
 
 	.hamburger.open .bar:nth-child(3) {
 		transform: translateY(-10px) rotate(-45deg);
+	}
+}
+
+
+/* MOBILVERSION */
+
+@media only screen and (max-width: 750px) {
+	body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.container {
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		gap: 5vh;
+		margin-top: 0;
+		margin-bottom: 0;
+		border: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	main {gap: 10vh; padding: 5vw;}
+
+	h1 { font-size: clamp(2em, 10vw, 5em); }
+	h2 { font-size: 2em; }
+	h3 { font-size: 1.3em; }
+	h4 { font-size: 1em; }
+	p, a {font-size: 0.7em;}
+
+	.heading-card {
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.heading-content {
+		grid-template-columns: 1fr;
+		justify-items: center;
 	}
 
 	.contact-button {
