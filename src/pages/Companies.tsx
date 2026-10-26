@@ -5,6 +5,8 @@ import { Reveal } from '../components/Reveal';
 export function Companies() {
   return (
     <div className={styles.page}>
+      <title>För företag | CS-sektionen</title>
+      <meta name="description" content="Samarbeta med CS-sektionen, NTKs största sektion, och nå ut till studenter inom datavetenskap och interaktionsdesign." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>För företag</h1>

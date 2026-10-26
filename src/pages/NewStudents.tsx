@@ -169,6 +169,8 @@ const items = [
 export function NewStudents() {
   return (
     <>
+      <title>Ny student | CS-sektionen</title>
+      <meta name="description" content="Välkommen till Umeå universitet! En checklista med det du behöver veta som ny student under CS-sektionen." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Ny student</h1>

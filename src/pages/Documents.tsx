@@ -55,6 +55,8 @@ export function Documents() {
 
   return (
     <>
+      <title>Dokument | CS-sektionen</title>
+      <meta name="description" content="Mötesprotokoll, stadgar, reglemente och annat arkiverat material från CS-sektionen." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Dokument</h1>

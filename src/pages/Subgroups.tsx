@@ -123,6 +123,8 @@ const projectLeads = [
 export function Subgroups() {
   return (
     <>
+      <title>Undergrupper | CS-sektionen</title>
+      <meta name="description" content="CS-sektionens undergrupper samlar medlemmar kring olika intressen och projekt. Så engagerar du dig." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Undergrupper</h1>

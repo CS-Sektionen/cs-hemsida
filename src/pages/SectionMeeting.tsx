@@ -5,6 +5,8 @@ import { Reveal } from '../components/Reveal';
 export function SectionMeeting() {
   return (
     <>
+      <title>Sektionsmöten | CS-sektionen</title>
+      <meta name="description" content="Allt om CS-sektionens styrelsemöten och stormöten, och hur du skriver en motion för att påverka sektionen." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Sektionsmöten</h1>
