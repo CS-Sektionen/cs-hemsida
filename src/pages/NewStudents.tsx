@@ -26,7 +26,7 @@ const items = [
         runt med folk i din klass om de har något annat tips.
       </p>
     ),
-    image: <img src="/images/campus/student-housing.jpg" alt="BLA BLA" />,
+    image: <img src="/images/campus/student-housing.jpg" alt="Studentbostäder" />,
   },
   {
     title: 'Kåren',
@@ -70,7 +70,7 @@ const items = [
         specifika salar.
       </p>
     ),
-    image: <img src="/images/campus/university-aerial.jpg" alt="flygbild över umeå universitet" />,
+    image: <img src="/images/campus/university-aerial.jpg" alt="Flygbild över Umeå universitet" />,
   },
   {
     title: 'Transport',
@@ -82,7 +82,7 @@ const items = [
         ett billigt och enkelt sätt när det inte är för mycket snö.
       </p>
     ),
-    image: <img src="/images/campus/lindellhallen-bikes.jpg" alt="cyklar vid lindellhallen" />,
+    image: <img src="/images/campus/lindellhallen-bikes.jpg" alt="Cyklar vid Lindellhallen" />,
   },
   {
     title: 'Kurslitteratur',
@@ -94,7 +94,7 @@ const items = [
         men även om de har anteckningar eller sammanfattningsdokument att dela med sig av.
       </p>
     ),
-    image: <img src="/images/student-life/textbooks.jpg" alt="bokhyllor" />,
+    image: <img src="/images/student-life/textbooks.jpg" alt="Bokhyllor" />,
   },
   {
     title: 'Mat och lunchtips',
@@ -139,7 +139,7 @@ const items = [
         med finkläderna. Sittningar hålls ofta på kårhusen.
       </p>
     ),
-    image: <img src="/images/events/formal-dinner-origo.jpg" alt="dukat bord origo" />,
+    image: <img src="/images/events/formal-dinner-origo.jpg" alt="Dukat bord i Origo" />,
   },
   {
     title: 'Festerier',
@@ -149,7 +149,7 @@ const items = [
         Party Providers och festeriet för Interaktion &amp; Design heter IndivID.
       </p>
     ),
-    image: <img src="/images/events/tyska-striden.jpg" alt="tyska striden med IndivID" />,
+    image: <img src="/images/events/tyska-striden.jpg" alt="Tyska striden med IndivID" />,
   },
   {
     title: 'Ovvar',
@@ -162,7 +162,7 @@ const items = [
         dig i vad du gör med den.
       </p>
     ),
-    image: <img src="/images/student-life/cs-overalls.jpeg" alt="dataovvar" />,
+    image: <img src="/images/student-life/cs-overalls.jpeg" alt="Dataovvar" />,
   },
 ];
 

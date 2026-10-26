@@ -8,44 +8,37 @@ const folders = [
   {
     href: 'https://drive.google.com/drive/folders/18nn8CXZPUMXxE5nWr9930r6BYqNYgvht?usp=sharing',
     icon: '/images/retro/xp-icons/folder-closed.ico',
-    alt: 'Styrelsesammanträde',
     label: 'Styrelse- sammanträden',
   },
   {
     href: 'https://drive.google.com/drive/folders/1-cmVgLf14crox7Jitd8yGbUqtaiL9IC4?usp=sharing',
     icon: '/images/retro/xp-icons/folder-closed.ico',
-    alt: 'Stormöten',
     label: 'Stormöten',
   },
   {
     href: 'https://drive.google.com/drive/folders/1u_CjUKSgANE8ZdxMW_SGv2Og3Hlv2m8C?usp=sharing',
     icon: '/images/retro/xp-icons/file.ico',
-    alt: 'Stadgar',
     label: 'Stadgar',
   },
   {
     href: 'https://drive.google.com/drive/folders/1QoDMtBfuEvcVum74LFe59QzdkXYjRi_n?usp=sharing',
     icon: '/images/retro/xp-icons/file.ico',
-    alt: 'Reglemente',
     label: 'Reglemente',
   },
   {
     href: 'https://drive.google.com/drive/folders/1D-7AAxa5SShZ9lf0nW7WN6yVvMkwNmiq?usp=sharing',
     icon: '/images/retro/xp-icons/folder-closed.ico',
-    alt: 'Verksamhetsberättelser',
     label: 'Verksamhets- berättelser',
   },
   {
     href: 'https://drive.google.com/drive/folders/1seENi5IkYojOc9z5U_A4ocRklgCgvbzr?usp=sharing',
     icon: '/images/retro/xp-icons/folder-closed.ico',
-    alt: 'Arkiv',
     label: 'Arkiv',
   },
   {
     href: 'https://drive.google.com/drive/folders/0B9hIrqCGZj9zb1R6d2NNeFd0Mnc?resourcekey=0-eDOSiVA4_C86Rcp4E_Gcxg&usp=sharing',
     icon: '/images/retro/xp-icons/folder-closed.ico',
-    alt: 'Pluggmatrial',
-    label: 'Pluggmatrial',
+    label: 'Pluggmaterial',
   },
 ];
 
@@ -92,7 +85,7 @@ export function Documents() {
                 {folders.map((folder) => (
                   <a href={folder.href} target="_blank" rel="noreferrer" key={folder.label}>
                     <button className="folder-button">
-                      <img src={folder.icon} alt={folder.alt} />
+                      <img src={folder.icon} alt="" />
                       <p>{folder.label}</p>
                     </button>
                   </a>
@@ -102,14 +95,14 @@ export function Documents() {
               <Terminal screenRef={screenRef} />
 
               <div id="computer-footer">
-                <img src="/images/retro/windows-xp-icon.png" alt="windows logga" />
+                <img src="/images/retro/windows-xp-icon.png" alt="Logga för Windows XP" />
               </div>
             </div>
             <div id="post-it">
               <p>Lösen: password123</p>
             </div>
           </div>
-          <img id="keyboard" src="/images/retro/keyboard.png" alt="bild på tangentbord" />
+          <img id="keyboard" src="/images/retro/keyboard.png" alt="Tangentbord" />
         </div>
         ) : (
           <div className={styles['document-cards']}>
@@ -121,7 +114,7 @@ export function Documents() {
                 rel="noreferrer"
                 className={`small-info-card ${styles['document-card']}`}
               >
-                <img src={folder.icon} alt={folder.alt} />
+                <img src={folder.icon} alt="" />
                 <span>{folder.label.replace(/- /g, '')}</span>
               </a>
             ))}

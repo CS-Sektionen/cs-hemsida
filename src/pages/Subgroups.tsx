@@ -6,7 +6,7 @@ import { Reveal } from '../components/Reveal';
 const subgroups = [
   {
     image: '/images/logos/lan-by-cs-logo.png',
-    imageAlt: 'Bild på LANbyCS logga',
+    imageAlt: 'Logga för LANbyCS',
     title: 'LANbyCS',
     description: (
       <>
@@ -19,7 +19,7 @@ const subgroups = [
   },
   {
     image: '/images/logos/join-computer-science.jpg',
-    imageAlt: 'Bild på DiCS logga',
+    imageAlt: 'Logga för DiCS',
     title: 'DiCS (Dataintresserade i CS)',
     description: (
       <>
@@ -32,7 +32,7 @@ const subgroups = [
   },
   {
     image: '/images/logos/macs-logo.png',
-    imageAlt: 'Bild på märkesgruppens logga',
+    imageAlt: 'Logga för märkesgruppen',
     title: 'MaCS (Märken av CS)',
     description: (
       <>
@@ -44,7 +44,7 @@ const subgroups = [
   },
   {
     image: '/images/logos/gib-logo.png',
-    imageAlt: 'Bild på GIBs logga',
+    imageAlt: 'Logga för GIB',
     title: 'Gäris & Ickebinäris (GIB)',
     description: (
       <>
@@ -58,7 +58,7 @@ const subgroups = [
 const projectLeads = [
   {
     image: '/images/board/undated/vice-chair.jpg',
-    imageAlt: 'LANbyCS projektledare',
+    imageAlt: 'Projektledare för LANbyCS',
     name: 'Lukas Walther',
     role: 'LANbyCS',
     description: (
@@ -107,7 +107,7 @@ const projectLeads = [
   },
   {
     image: '/images/placeholder.jpg',
-    imageAlt: 'GIB ordförande',
+    imageAlt: 'Ordförande för GIB',
     name: 'Vakant',
     email: 'gibdata2@gmail.com',
     role: 'GIB',

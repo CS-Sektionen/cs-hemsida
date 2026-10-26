@@ -33,7 +33,7 @@ const categories: Category[] = [
     members: [
       {
         image: '/images/board/2026-27/ture.jpg',
-        imageAlt: 'ordförande',
+        imageAlt: 'Ordförande',
         name: 'Ture Åström Säfsten',
         email: 'ordf@cssektionen.se',
         role: 'Ordförande',
@@ -54,7 +54,7 @@ const categories: Category[] = [
       },
       {
         image: '/images/board/2026-27/cedric.jpg',
-        imageAlt: 'kassör',
+        imageAlt: 'Kassör',
         name: 'Cedric Strand',
         email: 'ekonomi@cssektionen.se',
         role: 'Kassör',
@@ -77,7 +77,7 @@ const categories: Category[] = [
     members: [
       {
         image: '/images/board/2026-27/lukas-w.jpg',
-        imageAlt: 'vice ordförande',
+        imageAlt: 'Vice ordförande',
         name: 'Lukas Walther',
         email: 'vice@cssektionen.se',
         role: 'Vice Ordförande',
@@ -94,7 +94,7 @@ const categories: Category[] = [
       },
       {
         image: '/images/board/2026-27/kevin.jpg',
-        imageAlt: 'sekreterare',
+        imageAlt: 'Sekreterare',
         name: 'Kevin Molin',
         email: 'sekreterare@cssektionen.se',
         role: 'Sekreterare',
@@ -113,7 +113,7 @@ const categories: Category[] = [
     members: [
       {
         image: '/images/placeholder.jpg',
-        imageAlt: 'arbetsmarknadsutskottet',
+        imageAlt: 'Arbetsmarknadsutskottet',
         name: 'Vakant',
         email: 'arbetsmarknad@cssektionen.se',
         role: 'Arbetsmarknads­utskottet',
@@ -142,7 +142,7 @@ const categories: Category[] = [
       },
       {
         image: '/images/board/2026-27/elias.jpg',
-        imageAlt: 'studiesociala utskottet',
+        imageAlt: 'Studiesociala utskottet',
         name: 'Elias Svensson',
         email: 'studiesocial@cssektionen.se',
         role: 'Studiesociala utskottet',
