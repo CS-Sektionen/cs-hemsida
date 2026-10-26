@@ -54,7 +54,7 @@ export function SectionMeeting() {
               i vad som händer, även om man inte själv sitter i styrelsen.
             </p>
           </div>
-          <img src="/images/events/board-meeting.jpg" alt="BLA BLA" />
+          <img src="/images/events/board-meeting-autumn-2026.jpg" alt="styrelsemedlemmar under ett styrelsemöte" />
         </Reveal>
 
         <Reveal className={`info-card-container ${styles['motion-card']}`} id="motion">
