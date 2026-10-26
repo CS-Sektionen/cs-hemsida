@@ -209,6 +209,8 @@ const categories: Category[] = [
 export function Board() {
   return (
     <>
+      <title>Styrelsen | CS-sektionen</title>
+      <meta name="description" content="Möt CS-sektionens styrelse och läs om rollerna i presidiet, utskotten och egon." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Styrelsen</h1>

@@ -114,6 +114,8 @@ export function Contact() {
 
   return (
     <div className={styles.page}>
+      <title>Kontakt | CS-sektionen</title>
+      <meta name="description" content="Har du frågor, funderingar eller förslag? Kontakta CS-sektionen vid Umeå universitet." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Kontakt</h1>

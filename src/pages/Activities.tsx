@@ -4,6 +4,8 @@ import { Reveal } from '../components/Reveal';
 export function Activities() {
   return (
     <>
+      <title>Aktiviteter | CS-sektionen</title>
+      <meta name="description" content="Märkestisdagar, ovveinvigning, Åre skiweek, LAN och pubar. Läs om aktiviteterna som CS-sektionen anordnar." />
       <div id="activities-frame" className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Aktiviteter</h1> 

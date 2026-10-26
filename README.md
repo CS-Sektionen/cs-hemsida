@@ -58,7 +58,7 @@ Hur vi jobbar i repot står i [CONTRIBUTING](CONTRIBUTING.md).
 upp allt till Loopia via FTP. Läs igenom hela diffen i pull requesten innan du mergar.
 
 Sidan körs på Loopias Unix-plattform (Apache). `public/.htaccess` skickar alla adresser
-som inte är riktiga filer till React-appen, så nya sidor behöver bara läggas till i `src/App.tsx`.
+som inte är riktiga filer till React-appen, så nya sidor behöver bara läggas till i `src/App.tsx` och `public/sitemap.xml`.
 
 Varje merge till `dev` publiceras på samma sätt till
 [dev.cssektionen.se](https://dev.cssektionen.se). Kolla att allt ser rätt ut där innan

@@ -10,6 +10,8 @@ export function Home() {
 
   return (
     <>
+      <title>CS-sektionen vid Umeå universitet</title>
+      <meta name="description" content="CS-sektionen vid Umeå universitet arbetar för att studenter på Datavetenskap och Interaktion & Design ska få en så bra studietid som möjligt." />
       <div className="heading-frame">
         <div className={`heading-content ${styles['heading-content']}`}>
           <section className={`heading-card ${styles['heading-card']}`}>
