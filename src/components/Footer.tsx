@@ -16,22 +16,16 @@ export function Footer() {
 
       <div className="middle">
         <div className="social-media-logos">
-          <a className="instagram-link" href="https://www.instagram.com/cs_sektionen/" hrefLang="sv">
-            <span className="logo">
-              <img src="/images/icons/instagram.png" alt="Länk till CS Instagram" />
-            </span>
+          <a className="instagram-link" href="https://www.instagram.com/cs_sektionen/" hrefLang="sv" aria-label="Länk till CS Instagram">
+            <span className="logo" />
           </a>
 
-          <a className="discord-link" href="https://discord.gg/XW3Ry7eZbQ" hrefLang="sv">
-            <span className="logo">
-              <img src="/images/icons/discord.png" alt="Länk till CS Discord" />
-            </span>
+          <a className="discord-link" href="https://discord.gg/XW3Ry7eZbQ" hrefLang="sv" aria-label="Länk till CS Discord">
+            <span className="logo" />
           </a>
 
-          <a className="hitract-link" href="https://open.hitract.se/HitClub/1662" hrefLang="sv">
-            <span className="logo">
-              <img src="/images/logos/hitract-outline.png" alt="Länk till CS Hitract" />
-            </span>
+          <a className="hitract-link" href="https://open.hitract.se/HitClub/1662" hrefLang="sv" aria-label="Länk till CS Hitract">
+            <span className="logo" />
           </a>
         </div>
         <p>Webbdesign: Emma Edlund, Irma Eljenmyr</p>
