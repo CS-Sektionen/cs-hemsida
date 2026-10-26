@@ -28,7 +28,10 @@ export function Footer() {
             <span className="logo" />
           </a>
         </div>
-        <p>Webbdesign: Emma Edlund, Irma Eljenmyr</p>
+        <p>
+          Webbdesign: Emma Edlund, Irma Eljenmyr<br />
+          Webbutveckling: Emma Edlund, Alvar Sjögren
+        </p>
       </div>
 
       <div className="footer-links" id="program-links">
