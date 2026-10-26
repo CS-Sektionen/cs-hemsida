@@ -12,7 +12,7 @@ const FS: Record<string, string[]> = {
     'Reglemente',
     'Verksamhetsberättelser',
     'Arkiv',
-    'Pluggmatrial'
+    'Pluggmaterial'
   ],
   'C:\\Documents and Settings\\User\\Desktop\\Styrelsesammanträden': [],
   'C:\\Documents and Settings\\User\\Desktop\\Stormöten': [],
@@ -40,7 +40,7 @@ const GoogleLinks: Record<string, string> = {
   Reglemente: 'https://drive.google.com/file/d/1wjCk8muc3VIJj-SLu_LN0sv3McVnLUcw/view?usp=sharing',
   Verksamhetsberättelser: 'https://drive.google.com/drive/folders/1D-7AAxa5SShZ9lf0nW7WN6yVvMkwNmiq?usp=sharing',
   Arkiv: 'https://drive.google.com/drive/folders/1seENi5IkYojOc9z5U_A4ocRklgCgvbzr?usp=sharing',
-  Pluggmatrial: 'https://drive.google.com/drive/folders/1seENi5IkYojOc9z5U_A4ocRklgCgvbzr?usp=sharing',
+  Pluggmaterial: 'https://drive.google.com/drive/folders/1seENi5IkYojOc9z5U_A4ocRklgCgvbzr?usp=sharing',
 };
 
 function isDir(p: string) {
