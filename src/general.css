@@ -663,7 +663,7 @@ footer {
 	text-align: center;
 	grid-column: 2;
 	min-width: 0;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 
 .social-media-logos {
@@ -676,14 +676,22 @@ footer {
 	min-width: 0;
 }
 
-.logo > img {
+/* Ikonerna ritas med textfärgen via mask, som .chevron, så de kan byta färg vid hover */
+.logo {
+	display: block;
 	height: 50px;
 	width: 50px;
-	transition: transform 0.2s ease;
+	background-color: currentColor;
+	mask: center / contain no-repeat;
+	print-color-adjust: exact;
 }
 
-.logo > img:hover {
-  transform: scale(1.1);
+.instagram-link .logo { mask-image: url(/images/icons/instagram.svg); }
+.discord-link .logo { mask-image: url(/images/icons/discord.svg); }
+.hitract-link .logo { mask-image: url(/images/icons/hitract.svg); }
+
+.social-media-logos a:hover {
+	color: var(--link-blue);
 }
 
 
@@ -1100,11 +1108,6 @@ footer {
 		grid-auto-flow: row;
 		justify-self: center;
 		gap: 20px;
-	}
-
-	.logo > img {
-		height: 50px;
-		width: 50px;
 	}
 
 }
