@@ -10,6 +10,8 @@ export function Home() {
 
   return (
     <>
+      <title>CS-sektionen vid Umeå universitet</title>
+      <meta name="description" content="CS-sektionen vid Umeå universitet arbetar för att studenter på Datavetenskap och Interaktion & Design ska få en så bra studietid som möjligt." />
       <div className="heading-frame">
         <div className={`heading-content ${styles['heading-content']}`}>
           <section className={`heading-card ${styles['heading-card']}`}>
@@ -39,7 +41,7 @@ export function Home() {
               </a>
             </div>
           </section>
-          <img src="/images/logos/cs-logo.svg" alt="CS-sektionens logga" />
+          <img src="/images/logos/cs-logo.svg" alt="Logga för CS-sektionen" />
         </div>
         <svg className="diagonal-line" preserveAspectRatio="none">
           <line x1="0" y1="85%" x2="100%" y2="100%" stroke="var(--border-blue)" strokeWidth={4} vectorEffect="non-scaling-stroke" />
@@ -48,7 +50,7 @@ export function Home() {
 
       <main id="main">
         <Reveal className="info-card-container">
-          <img src="/images/events/club-x-2019.jpg" alt="club på Origo" />
+          <img src="/images/events/party-dj-booth.webp" alt="Fest med DJ-bås och dansgolv" />
           <div className="info-text">
             <h2>För ditt studentliv</h2>
             <p>
@@ -76,13 +78,13 @@ export function Home() {
           <Carousel
             slides={[
               <div className="program-image-content" key="c">
-                <img src="/images/logos/programs/computing-engineering.png" alt="logga" />
+                <img src="/images/logos/programs/computing-engineering.png" alt="Logga för Civilingenjörsprogrammet i Teknisk Datavetenskap" />
               </div>,
               <div className="program-image-content" key="dv">
-                <img src="/images/logos/programs/computer-science.png" alt="logga" />
+                <img src="/images/logos/programs/computer-science.png" alt="Logga för Kandidatprogrammet i Datavetenskap" />
               </div>,
               <div className="program-image-content" key="id">
-                <img src="/images/logos/programs/interaction-design.png" alt="logga" />
+                <img src="/images/logos/programs/interaction-design.png" alt="Logga för Civilingenjörsprogrammet i Interaktion &amp; Design" />
               </div>,
             ]}
           />
@@ -124,7 +126,7 @@ export function Home() {
             </div>
           </div>
           <div className={styles['ntk-image-container']}>
-            <img src="/images/logos/ntk-logo.png" alt="logga NTK" />
+            <img src="/images/logos/ntk-logo.png" alt="Logga för NTK" />
           </div>
         </Reveal>
 

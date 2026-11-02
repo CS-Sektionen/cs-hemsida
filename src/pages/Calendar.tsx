@@ -21,6 +21,8 @@ export function Calendar() {
 
   return (
     <>
+      <title>Kalender | CS-sektionen</title>
+      <meta name="description" content="Kommande aktiviteter inom CS-sektionen och övriga event på NTK." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Kalender</h1>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/images/logos/cs-logo.svg" />
@@ -9,16 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Tilt%20Warp" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Bad Script" rel="stylesheet" />
     <title>CS-sektionen</title>
-    <script>
-      // Restores the real path after 404.html redirected here, before
-      // React Router reads the URL. See public/404.html for the other half.
-      (function () {
-        var p = new URLSearchParams(window.location.search).get('p');
-        if (p) {
-          window.history.replaceState(null, '', '/' + decodeURIComponent(p));
-        }
-      })();
-    </script>
+    <!-- Link previews (Discord, Instagram, ...) don't run JavaScript, so they only see these. -->
+    <meta property="og:title" content="CS-sektionen vid Umeå universitet" />
+    <meta property="og:description" content="Sektionen för studenter på Datavetenskap och Interaktion &amp; Design vid Umeå universitet." />
+    <meta property="og:image" content="https://www.cssektionen.se/images/og-image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <div id="root"></div>

@@ -136,6 +136,11 @@
 	height: 15vh;
 }
 
+.honeypot {
+	position: absolute;
+	left: -9999px;
+}
+
 
 /*---------- KONTAKT STYRELSEN ----------*/
 /*

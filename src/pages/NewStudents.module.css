@@ -33,6 +33,10 @@
 	text-decoration: underline;
 }
 
+.origo-image {
+	object-position: 50% 10%;
+}
+
 @media only screen and (max-width: 750px) {
 	.heading-card {
 		padding: 5rem clamp(1rem, 10vw, 8rem) 8rem clamp(1rem, 10vw, 8rem);

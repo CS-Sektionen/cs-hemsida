@@ -82,7 +82,7 @@ export function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
                 onClick={(e) => toggleDropdown(index, e.currentTarget)}
               >
                 {section.label}
-                <img src="/images/icons/chevron-down.svg" alt="" />
+                <span className="chevron" aria-hidden="true" />
               </button>
               <ul
                 id={`dropdown-wide-${index}`}
@@ -143,7 +143,7 @@ export function Header({ sidebarOpen, setSidebarOpen }: HeaderProps) {
                   onClick={(e) => toggleDropdown(index, e.currentTarget)}
                 >
                   {section.label}
-                  <img src="/images/icons/chevron-down.svg" alt="" />
+                  <span className="chevron" aria-hidden="true" />
                 </button>
                 <ul
                   id={`dropdown-resp-${index}`}

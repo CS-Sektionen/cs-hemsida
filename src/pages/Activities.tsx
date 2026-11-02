@@ -4,6 +4,8 @@ import { Reveal } from '../components/Reveal';
 export function Activities() {
   return (
     <>
+      <title>Aktiviteter | CS-sektionen</title>
+      <meta name="description" content="Märkestisdagar, ovveinvigning, Åre skiweek, LAN och pubar. Läs om aktiviteterna som CS-sektionen anordnar." />
       <div id="activities-frame" className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Aktiviteter</h1> 
@@ -102,7 +104,7 @@ export function Activities() {
                 Under PUB:arna kan du träffa andra studenter, ta en öl eller en läsk och bara ha kul.
               </p>
             </div>
-            <img src="/images/events/pub.jpg" alt="PUB anordnad av undergrupp" />
+            <img src="/images/events/pub.webp" alt="Studenter köar till maten på en PUB" />
           </Reveal>
         </div>
       </main>

@@ -5,6 +5,8 @@ import { Reveal } from '../components/Reveal';
 export function SectionMeeting() {
   return (
     <>
+      <title>Sektionsmöten | CS-sektionen</title>
+      <meta name="description" content="Allt om CS-sektionens styrelsemöten och stormöten, och hur du skriver en motion för att påverka sektionen." />
       <div className={`heading-frame ${styles['heading-frame']}`}>
         <div className={`heading-card ${styles['heading-card']}`}>
           <h1>Sektionsmöten</h1>
@@ -27,7 +29,7 @@ export function SectionMeeting() {
 
       <main id="main">
         <Reveal className="info-card-container">
-          <img src="/images/events/general-meeting-autumn-2026.jpg" alt="studenter som går" />
+          <img src="/images/events/general-meeting-autumn-2026.jpg" alt="Styrelsen under ett stormöte" />
           <div className="info-text">
             <h2>Stormöte</h2>
             <p>
@@ -52,7 +54,7 @@ export function SectionMeeting() {
               i vad som händer, även om man inte själv sitter i styrelsen.
             </p>
           </div>
-          <img src="/images/events/board-meeting.jpg" alt="BLA BLA" />
+          <img src="/images/events/board-meeting-autumn-2026.jpg" alt="Styrelsemedlemmar under ett styrelsemöte" />
         </Reveal>
 
         <Reveal className={`info-card-container ${styles['motion-card']}`} id="motion">

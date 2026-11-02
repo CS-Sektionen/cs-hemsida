@@ -4,6 +4,7 @@ import styles from './NotFound.module.css';
 export function NotFound() {
   return (
     <main id="main" className={styles['not-found']}>
+      <title>Sidan finns inte | CS-sektionen</title>
       {/* The server answers 200 for every path, so tell search engines not to index this. */}
       <meta name="robots" content="noindex" />
       <h1 className={styles['code']}>404</h1>
