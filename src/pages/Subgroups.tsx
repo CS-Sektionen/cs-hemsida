@@ -14,6 +14,11 @@ const subgroups = [
         Vi är en grupp som brinner för gaming och vill skapa en rolig och social upplevelse för alla deltagare.
         Vi anordnar LAN varje vår- och hösttermin, och ibland samarbetar vi med andra campus runtom i Sverige för att skapa Cross-Country LAN.
         Vår vision är att skapa en gemenskap kring gaming och ge studenterna möjlighet att träffas, spela tillsammans och ha kul!
+        <br />
+        <br />
+        <Link className="filled-button" to="https://lanbycs.cssektionen.se" target="_blank" rel="noreferrer">
+          Läs mer på LANbyCS hemsida
+        </Link>
       </>
     ),
   },
@@ -60,6 +65,7 @@ const projectLeads = [
     image: '/images/board/undated/vice-chair.jpg',
     imageAlt: 'Projektledare för LANbyCS',
     name: 'Lukas Walther',
+    email: 'lanbycs@gmail.com',
     role: 'LANbyCS',
     description: (
       <>
