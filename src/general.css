@@ -180,7 +180,6 @@ main {
 
 /*Knapp utan bakgrundsfärg*/
 .empty-button {
-	display: block;
 	background-color: transparent;
 }
 
