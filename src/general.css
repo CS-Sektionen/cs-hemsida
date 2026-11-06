@@ -161,6 +161,7 @@ main {
 /*Knapp med bakgrundsfärg*/
 .contact-button > a, .filled-button, .empty-button {
 	position: relative;
+	display: block;
 	overflow: hidden;
 	color: var(--white);
 	font-family: 'Tilt Warp';
